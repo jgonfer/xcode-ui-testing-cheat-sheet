@@ -9,6 +9,8 @@
 import UIKit
 
 class PlayersListViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
     var players: [Player]?
     var selectedIndex: NSIndexPath?
     
@@ -20,6 +22,7 @@ class PlayersListViewController: UIViewController {
     
     private func setupView() {
         getPlayersList()
+        tableView.contentInset = UIEdgeInsetsMake(65, 0, 0, 0)
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,14 +32,24 @@ class PlayersListViewController: UIViewController {
     
     func getPlayersList() {
         players = [Player]()
-        players?.append(Player(role: .Specialist, name: "Sylvannas", lore: .Warcraft))
+        players?.append(Player(role: .Specialist, name: "Sylvanas", lore: .Warcraft))
+        players?.append(Player(role: .Assassin, name: "Valla", lore: .Diablo))
+        players?.append(Player(role: .Warrior, name: "Arthas", lore: .Warcraft))
+        players?.append(Player(role: .Support, name: "Malfurion", lore: .Warcraft))
+        players?.append(Player(role: .Specialist, name: "Gazlowe", lore: .Warcraft))
+        players?.append(Player(role: .Assassin, name: "Nova", lore: .Starcraft))
+        players?.append(Player(role: .Support, name: "Uther", lore: .Warcraft))
+        players?.append(Player(role: .Specialist, name: "Azmodan", lore: .Diablo))
+        players?.append(Player(role: .Warrior, name: "Artanis", lore: .Starcraft))
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let vc = segue.destinationViewController as? PlayerDetailsViewController, let index = selectedIndex, let players = players else {
-            return
+        if segue.identifier == "showPlayerDetails" {
+            guard let vc = segue.destinationViewController as? PlayerDetailsViewController, let index = selectedIndex, let players = players else {
+                return
+            }
+            vc.player = players[index.row]
         }
-        vc.player = players[index.row]
     }
 }
 
@@ -67,5 +80,6 @@ extension PlayersListViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedIndex = indexPath
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("showPlayerDetails", sender: nil)
     }
 }

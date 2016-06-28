@@ -14,13 +14,13 @@
 		1D9903DA1D22935B00116CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */; };
 		1D9903E51D22935B00116CA4 /* XcuitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903E41D22935B00116CA4 /* XcuitTests.swift */; };
 		1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */; };
-		1D9903FE1D22B60500116CA4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903FD1D22B60500116CA4 /* TableViewController.swift */; };
 		1D9904001D22B68D00116CA4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903FF1D22B68D00116CA4 /* Player.swift */; };
 		1D9904081D22B70500116CA4 /* PlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904071D22B70500116CA4 /* PlayersListViewController.swift */; };
 		1D99040B1D22B7B300116CA4 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040A1D22B7B300116CA4 /* PlayerCell.swift */; };
 		1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040C1D22C0DB00116CA4 /* Role.swift */; };
 		1D99040F1D22C11900116CA4 /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040E1D22C11900116CA4 /* Lore.swift */; };
 		1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */; };
+		6B61A3261D22F7AB00F7A107 /* Players.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B61A3251D22F7AB00F7A107 /* Players.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +54,13 @@
 		1D9903EB1D22935B00116CA4 /* XcuitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcuitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcuitUITests.swift; sourceTree = "<group>"; };
 		1D9903F11D22935B00116CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D9903FD1D22B60500116CA4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1D9903FF1D22B68D00116CA4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/Player.swift; sourceTree = "<group>"; };
 		1D9904071D22B70500116CA4 /* PlayersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayersListViewController.swift; path = Controller/PlayersListViewController.swift; sourceTree = "<group>"; };
 		1D99040A1D22B7B300116CA4 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerCell.swift; path = View/PlayerCell.swift; sourceTree = "<group>"; };
 		1D99040C1D22C0DB00116CA4 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Role.swift; path = Model/Role.swift; sourceTree = "<group>"; };
 		1D99040E1D22C11900116CA4 /* Lore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lore.swift; path = Model/Lore.swift; sourceTree = "<group>"; };
 		1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerDetailsViewController.swift; path = Controller/PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		6B61A3251D22F7AB00F7A107 /* Players.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Players.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,15 +111,11 @@
 		1D9903CC1D22935B00116CA4 /* Xcuit */ = {
 			isa = PBXGroup;
 			children = (
-				1D9903CD1D22935B00116CA4 /* AppDelegate.swift */,
 				1D9903D11D22935B00116CA4 /* SecondViewController.swift */,
-				1D9903FD1D22B60500116CA4 /* TableViewController.swift */,
+				6B61A3241D22EF7F00F7A107 /* Common */,
 				1D9904011D22B69200116CA4 /* Model */,
 				1D9904091D22B77900116CA4 /* View */,
 				1D9904021D22B6B700116CA4 /* Controller */,
-				1D9903D31D22935B00116CA4 /* Main.storyboard */,
-				1D9903D61D22935B00116CA4 /* Assets.xcassets */,
-				1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */,
 				1D9903DB1D22935B00116CA4 /* Info.plist */,
 			);
 			path = Xcuit;
@@ -168,6 +164,18 @@
 				1D99040A1D22B7B300116CA4 /* PlayerCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		6B61A3241D22EF7F00F7A107 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */,
+				1D9903D31D22935B00116CA4 /* Main.storyboard */,
+				1D9903D61D22935B00116CA4 /* Assets.xcassets */,
+				6B61A3251D22F7AB00F7A107 /* Players.xcassets */,
+				1D9903CD1D22935B00116CA4 /* AppDelegate.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B61A3261D22F7AB00F7A107 /* Players.xcassets in Resources */,
 				1D9903DA1D22935B00116CA4 /* LaunchScreen.storyboard in Resources */,
 				1D9903D71D22935B00116CA4 /* Assets.xcassets in Resources */,
 				1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */,
@@ -307,7 +316,6 @@
 				1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */,
 				1D9904001D22B68D00116CA4 /* Player.swift in Sources */,
 				1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */,
-				1D9903FE1D22B60500116CA4 /* TableViewController.swift in Sources */,
 				1D99040B1D22B7B300116CA4 /* PlayerCell.swift in Sources */,
 				1D99040F1D22C11900116CA4 /* Lore.swift in Sources */,
 			);
@@ -351,6 +359,7 @@
 				1D9903D41D22935B00116CA4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */ = {
@@ -359,6 +368,7 @@
 				1D9903D91D22935B00116CA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

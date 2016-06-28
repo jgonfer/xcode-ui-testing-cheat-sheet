@@ -10,4 +10,6 @@ import Foundation
 
 enum Role {
     case Warrior, Specialist, Assassin, Support
+    
+    static let image = ["warrior", "specialist", "assassin", "support"]
 }

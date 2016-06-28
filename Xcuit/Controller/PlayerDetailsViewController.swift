@@ -9,6 +9,9 @@
 import UIKit
 
 class PlayerDetailsViewController: UIViewController {
+    @IBOutlet weak var playerBigImage: UIImageView!
+    @IBOutlet weak var purchaseButton: UIButton!
+    
     var player: Player!
     
     override func viewDidLoad() {
@@ -18,7 +21,10 @@ class PlayerDetailsViewController: UIViewController {
     }
     
     private func setupView() {
-        navigationController?.title = player.name
+        navigationController?.navigationBar.topItem?.title = "Players"
+        title = player.name
+        playerBigImage.image = UIImage(named: "\(player.name.lowercaseString)-big")
+        purchaseButton.layer.cornerRadius = 5.0
     }
 
     override func didReceiveMemoryWarning() {

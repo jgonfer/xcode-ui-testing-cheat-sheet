@@ -9,6 +9,7 @@
 import UIKit
 
 class PlayerCell: UITableViewCell {
+    @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var roleImage: UIImageView!
     @IBOutlet weak var loreImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -17,7 +18,10 @@ class PlayerCell: UITableViewCell {
     var player: Player!
     
     func setupCell(player: Player) {
+        avatarImage.image = UIImage(named: player.name.lowercaseString)
         nameLabel.text = player.name
+        roleImage.image = UIImage(named: Role.image[player.role.hashValue])
+        loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])
         statusImage.image = UIImage(named: player.owned ? "owned" : "owned-no")
     }
 }

@@ -10,4 +10,7 @@ import Foundation
 
 enum Lore {
     case Warcraft, Starcraft, Diablo, Overwatch, LostVikings
+    
+    static let image = ["warcraft", "starcraft", "diablo", "overwatch", "blizzard"]
+    
 }
