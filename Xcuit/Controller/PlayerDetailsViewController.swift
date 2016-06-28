@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  PlayerDetailsViewController.swift
 //  Xcuit
 //
 //  Created by jgonzalez on 28/6/16.
@@ -8,18 +8,20 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class PlayerDetailsViewController: UIViewController {
+    var player: Player!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setupView()
+    }
+    
+    private func setupView() {
+        navigationController?.title = player.name
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-

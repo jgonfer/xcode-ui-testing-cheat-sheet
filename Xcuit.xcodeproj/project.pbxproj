@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903CD1D22935B00116CA4 /* AppDelegate.swift */; };
-		1D9903D01D22935B00116CA4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903CF1D22935B00116CA4 /* FirstViewController.swift */; };
 		1D9903D21D22935B00116CA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903D11D22935B00116CA4 /* SecondViewController.swift */; };
 		1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D31D22935B00116CA4 /* Main.storyboard */; };
 		1D9903D71D22935B00116CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D61D22935B00116CA4 /* Assets.xcassets */; };
 		1D9903DA1D22935B00116CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */; };
 		1D9903E51D22935B00116CA4 /* XcuitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903E41D22935B00116CA4 /* XcuitTests.swift */; };
 		1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */; };
+		1D9903FE1D22B60500116CA4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903FD1D22B60500116CA4 /* TableViewController.swift */; };
+		1D9904001D22B68D00116CA4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903FF1D22B68D00116CA4 /* Player.swift */; };
+		1D9904081D22B70500116CA4 /* PlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904071D22B70500116CA4 /* PlayersListViewController.swift */; };
+		1D99040B1D22B7B300116CA4 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040A1D22B7B300116CA4 /* PlayerCell.swift */; };
+		1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040C1D22C0DB00116CA4 /* Role.swift */; };
+		1D99040F1D22C11900116CA4 /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040E1D22C11900116CA4 /* Lore.swift */; };
+		1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* Begin PBXFileReference section */
 		1D9903CA1D22935B00116CA4 /* Xcuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903CD1D22935B00116CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D9903CF1D22935B00116CA4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1D9903D11D22935B00116CA4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1D9903D41D22935B00116CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D9903D61D22935B00116CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		1D9903EB1D22935B00116CA4 /* XcuitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcuitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcuitUITests.swift; sourceTree = "<group>"; };
 		1D9903F11D22935B00116CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9903FD1D22B60500116CA4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1D9903FF1D22B68D00116CA4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/Player.swift; sourceTree = "<group>"; };
+		1D9904071D22B70500116CA4 /* PlayersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayersListViewController.swift; path = Controller/PlayersListViewController.swift; sourceTree = "<group>"; };
+		1D99040A1D22B7B300116CA4 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerCell.swift; path = View/PlayerCell.swift; sourceTree = "<group>"; };
+		1D99040C1D22C0DB00116CA4 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Role.swift; path = Model/Role.swift; sourceTree = "<group>"; };
+		1D99040E1D22C11900116CA4 /* Lore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lore.swift; path = Model/Lore.swift; sourceTree = "<group>"; };
+		1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerDetailsViewController.swift; path = Controller/PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				1D9903CD1D22935B00116CA4 /* AppDelegate.swift */,
-				1D9903CF1D22935B00116CA4 /* FirstViewController.swift */,
 				1D9903D11D22935B00116CA4 /* SecondViewController.swift */,
+				1D9903FD1D22B60500116CA4 /* TableViewController.swift */,
+				1D9904011D22B69200116CA4 /* Model */,
+				1D9904091D22B77900116CA4 /* View */,
+				1D9904021D22B6B700116CA4 /* Controller */,
 				1D9903D31D22935B00116CA4 /* Main.storyboard */,
 				1D9903D61D22935B00116CA4 /* Assets.xcassets */,
 				1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */,
@@ -126,6 +141,33 @@
 				1D9903F11D22935B00116CA4 /* Info.plist */,
 			);
 			path = XcuitUITests;
+			sourceTree = "<group>";
+		};
+		1D9904011D22B69200116CA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D9903FF1D22B68D00116CA4 /* Player.swift */,
+				1D99040C1D22C0DB00116CA4 /* Role.swift */,
+				1D99040E1D22C11900116CA4 /* Lore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1D9904021D22B6B700116CA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D9904071D22B70500116CA4 /* PlayersListViewController.swift */,
+				1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D9904091D22B77900116CA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D99040A1D22B7B300116CA4 /* PlayerCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9904081D22B70500116CA4 /* PlayersListViewController.swift in Sources */,
+				1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */,
 				1D9903D21D22935B00116CA4 /* SecondViewController.swift in Sources */,
 				1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */,
-				1D9903D01D22935B00116CA4 /* FirstViewController.swift in Sources */,
+				1D9904001D22B68D00116CA4 /* Player.swift in Sources */,
+				1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */,
+				1D9903FE1D22B60500116CA4 /* TableViewController.swift in Sources */,
+				1D99040B1D22B7B300116CA4 /* PlayerCell.swift in Sources */,
+				1D99040F1D22C11900116CA4 /* Lore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xcuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xcuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +538,7 @@
 				1D9903F61D22935B00116CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9903F71D22935B00116CA4 /* Build configuration list for PBXNativeTarget "XcuitTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +547,7 @@
 				1D9903F91D22935B00116CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9903FA1D22935B00116CA4 /* Build configuration list for PBXNativeTarget "XcuitUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +556,7 @@
 				1D9903FC1D22935B00116CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
