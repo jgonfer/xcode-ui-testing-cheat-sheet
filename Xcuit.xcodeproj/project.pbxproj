@@ -12,7 +12,6 @@
 		1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D31D22935B00116CA4 /* Main.storyboard */; };
 		1D9903D71D22935B00116CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D61D22935B00116CA4 /* Assets.xcassets */; };
 		1D9903DA1D22935B00116CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D81D22935B00116CA4 /* LaunchScreen.storyboard */; };
-		1D9903E51D22935B00116CA4 /* XcuitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903E41D22935B00116CA4 /* XcuitTests.swift */; };
 		1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */; };
 		1D9904001D22B68D00116CA4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903FF1D22B68D00116CA4 /* Player.swift */; };
 		1D9904081D22B70500116CA4 /* PlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904071D22B70500116CA4 /* PlayersListViewController.swift */; };
@@ -24,13 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D9903E11D22935B00116CA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D9903C21D22935B00116CA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D9903C91D22935B00116CA4;
-			remoteInfo = Xcuit;
-		};
 		1D9903EC1D22935B00116CA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1D9903C21D22935B00116CA4 /* Project object */;
@@ -48,9 +40,6 @@
 		1D9903D61D22935B00116CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D9903D91D22935B00116CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D9903DB1D22935B00116CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D9903E01D22935B00116CA4 /* XcuitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcuitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D9903E41D22935B00116CA4 /* XcuitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcuitTests.swift; sourceTree = "<group>"; };
-		1D9903E61D22935B00116CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D9903EB1D22935B00116CA4 /* XcuitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcuitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcuitUITests.swift; sourceTree = "<group>"; };
 		1D9903F11D22935B00116CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D9903DD1D22935B00116CA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D9903E81D22935B00116CA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				1D9903CC1D22935B00116CA4 /* Xcuit */,
-				1D9903E31D22935B00116CA4 /* XcuitTests */,
 				1D9903EE1D22935B00116CA4 /* XcuitUITests */,
 				1D9903CB1D22935B00116CA4 /* Products */,
 			);
@@ -102,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				1D9903CA1D22935B00116CA4 /* Xcuit.app */,
-				1D9903E01D22935B00116CA4 /* XcuitTests.xctest */,
 				1D9903EB1D22935B00116CA4 /* XcuitUITests.xctest */,
 			);
 			name = Products;
@@ -118,15 +98,6 @@
 				1D9904021D22B6B700116CA4 /* Controller */,
 			);
 			path = Xcuit;
-			sourceTree = "<group>";
-		};
-		1D9903E31D22935B00116CA4 /* XcuitTests */ = {
-			isa = PBXGroup;
-			children = (
-				1D9903E41D22935B00116CA4 /* XcuitTests.swift */,
-				1D9903E61D22935B00116CA4 /* Info.plist */,
-			);
-			path = XcuitTests;
 			sourceTree = "<group>";
 		};
 		1D9903EE1D22935B00116CA4 /* XcuitUITests */ = {
@@ -198,24 +169,6 @@
 			productReference = 1D9903CA1D22935B00116CA4 /* Xcuit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1D9903DF1D22935B00116CA4 /* XcuitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D9903F71D22935B00116CA4 /* Build configuration list for PBXNativeTarget "XcuitTests" */;
-			buildPhases = (
-				1D9903DC1D22935B00116CA4 /* Sources */,
-				1D9903DD1D22935B00116CA4 /* Frameworks */,
-				1D9903DE1D22935B00116CA4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D9903E21D22935B00116CA4 /* PBXTargetDependency */,
-			);
-			name = XcuitTests;
-			productName = XcuitTests;
-			productReference = 1D9903E01D22935B00116CA4 /* XcuitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1D9903EA1D22935B00116CA4 /* XcuitUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9903FA1D22935B00116CA4 /* Build configuration list for PBXNativeTarget "XcuitUITests" */;
@@ -247,10 +200,6 @@
 					1D9903C91D22935B00116CA4 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
-					1D9903DF1D22935B00116CA4 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 1D9903C91D22935B00116CA4;
-					};
 					1D9903EA1D22935B00116CA4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 1D9903C91D22935B00116CA4;
@@ -271,7 +220,6 @@
 			projectRoot = "";
 			targets = (
 				1D9903C91D22935B00116CA4 /* Xcuit */,
-				1D9903DF1D22935B00116CA4 /* XcuitTests */,
 				1D9903EA1D22935B00116CA4 /* XcuitUITests */,
 			);
 		};
@@ -286,13 +234,6 @@
 				1D9903DA1D22935B00116CA4 /* LaunchScreen.storyboard in Resources */,
 				1D9903D71D22935B00116CA4 /* Assets.xcassets in Resources */,
 				1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D9903DE1D22935B00116CA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,14 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D9903DC1D22935B00116CA4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D9903E51D22935B00116CA4 /* XcuitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D9903E71D22935B00116CA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,11 +273,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D9903E21D22935B00116CA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D9903C91D22935B00116CA4 /* Xcuit */;
-			targetProxy = 1D9903E11D22935B00116CA4 /* PBXContainerItemProxy */;
-		};
 		1D9903ED1D22935B00116CA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D9903C91D22935B00116CA4 /* Xcuit */;
@@ -483,30 +411,6 @@
 			};
 			name = Release;
 		};
-		1D9903F81D22935B00116CA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = XcuitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.XcuitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcuit.app/Xcuit";
-			};
-			name = Debug;
-		};
-		1D9903F91D22935B00116CA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = XcuitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.XcuitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcuit.app/Xcuit";
-			};
-			name = Release;
-		};
 		1D9903FB1D22935B00116CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,15 +450,6 @@
 			buildConfigurations = (
 				1D9903F51D22935B00116CA4 /* Debug */,
 				1D9903F61D22935B00116CA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D9903F71D22935B00116CA4 /* Build configuration list for PBXNativeTarget "XcuitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D9903F81D22935B00116CA4 /* Debug */,
-				1D9903F91D22935B00116CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
