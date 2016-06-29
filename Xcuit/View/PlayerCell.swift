@@ -18,7 +18,10 @@ class PlayerCell: UITableViewCell {
     var player: Player!
     
     func setupCell(player: Player) {
-        avatarImage.image = UIImage(named: player.name.lowercaseString)
+        var image = player.name.lowercaseString
+        image = image.stringByReplacingOccurrencesOfString(" ", withString: "-")
+        image = image.stringByReplacingOccurrencesOfString("'", withString: "-")
+        avatarImage.image = UIImage(named: image)
         nameLabel.text = player.name
         roleImage.image = UIImage(named: Role.image[player.role.hashValue])
         loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])

@@ -35,6 +35,7 @@ class PlayersListViewController: UIViewController {
         players?.append(Player(role: .Specialist, name: "Sylvanas", lore: .Warcraft))
         players?.append(Player(role: .Assassin, name: "Valla", lore: .Diablo))
         players?.append(Player(role: .Warrior, name: "Arthas", lore: .Warcraft))
+        players?.append(Player(role: .Specialist, name: "The Lost Vikings", lore: .LostVikings))
         players?.append(Player(role: .Support, name: "Malfurion", lore: .Warcraft))
         players?.append(Player(role: .Specialist, name: "Gazlowe", lore: .Warcraft))
         players?.append(Player(role: .Assassin, name: "Nova", lore: .Starcraft))
@@ -48,6 +49,7 @@ class PlayersListViewController: UIViewController {
             guard let vc = segue.destinationViewController as? PlayerDetailsViewController, let index = selectedIndex, let players = players else {
                 return
             }
+            vc.delegate = self
             vc.player = players[index.row]
         }
     }
@@ -81,5 +83,15 @@ extension PlayersListViewController: UITableViewDelegate {
         selectedIndex = indexPath
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         performSegueWithIdentifier("showPlayerDetails", sender: nil)
+    }
+}
+
+extension PlayersListViewController: PlayerDetailsDelegate {
+    func playerPurchased(player: Player) {
+        guard let players = players, let selectedIndex = selectedIndex,let i = players.indexOf({ $0.name == player.name }) else {
+            return
+        }
+        self.players![i] = player
+        tableView.reloadRowsAtIndexPaths([selectedIndex], withRowAnimation: UITableViewRowAnimation.Fade)
     }
 }

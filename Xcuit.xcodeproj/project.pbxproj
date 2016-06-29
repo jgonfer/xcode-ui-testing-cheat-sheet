@@ -116,7 +116,6 @@
 				1D9904011D22B69200116CA4 /* Model */,
 				1D9904091D22B77900116CA4 /* View */,
 				1D9904021D22B6B700116CA4 /* Controller */,
-				1D9903DB1D22935B00116CA4 /* Info.plist */,
 			);
 			path = Xcuit;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 				1D9903D61D22935B00116CA4 /* Assets.xcassets */,
 				6B61A3251D22F7AB00F7A107 /* Players.xcassets */,
 				1D9903CD1D22935B00116CA4 /* AppDelegate.swift */,
+				1D9903DB1D22935B00116CA4 /* Info.plist */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -463,7 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Xcuit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Xcuit/Common/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;
@@ -475,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Xcuit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Xcuit/Common/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;

@@ -114,7 +114,11 @@
                             <constraint firstItem="zhp-BQ-RLT" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="fDL-bc-cUx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Heroes of the Storm" id="y2R-il-0ZZ"/>
+                    <navigationItem key="navigationItem" title="Heroes of the Storm" id="y2R-il-0ZZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Eyn-wT-lGf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="zhp-BQ-RLT" id="6nd-df-Obq"/>
                         <segue destination="oNf-An-UJd" kind="show" identifier="showPlayerDetails" id="hrW-KJ-EUj"/>
@@ -153,13 +157,41 @@
                                 <state key="normal" title="Buy">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buyPlayer:" destination="oNf-An-UJd" eventType="touchUpInside" id="PDI-hd-9ao"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gow-0Z-gU6">
+                                <rect key="frame" x="150" y="322" width="300" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wfc-ep-qcD">
+                                        <rect key="frame" x="125" y="0.0" width="50" height="20"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assassin" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-o1-SZ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diablo" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-eq-MUf">
+                                                <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-pc-l3s">
+                                        <rect key="frame" x="132" y="25" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gow-0Z-gU6" firstAttribute="centerX" secondItem="KSZ-wv-tLZ" secondAttribute="centerX" id="9b5-Vl-3rD"/>
                             <constraint firstItem="KSZ-wv-tLZ" firstAttribute="height" secondItem="EIP-Nm-lWK" secondAttribute="height" multiplier="0.4" id="HfZ-Oy-teN"/>
+                            <constraint firstItem="gow-0Z-gU6" firstAttribute="width" secondItem="KSZ-wv-tLZ" secondAttribute="width" id="ME5-C7-5Zy"/>
                             <constraint firstItem="IoA-Cb-Pay" firstAttribute="leading" secondItem="EIP-Nm-lWK" secondAttribute="leading" id="QNn-Da-XOv"/>
                             <constraint firstAttribute="trailing" secondItem="IoA-Cb-Pay" secondAttribute="trailing" id="UNu-9f-fl6"/>
+                            <constraint firstItem="gow-0Z-gU6" firstAttribute="top" secondItem="KSZ-wv-tLZ" secondAttribute="bottom" constant="8" id="V7w-hc-gEG"/>
                             <constraint firstItem="S2l-be-eGD" firstAttribute="top" secondItem="g93-ff-dpB" secondAttribute="bottom" constant="50" id="Wi9-hr-w8e"/>
                             <constraint firstItem="IoA-Cb-Pay" firstAttribute="top" secondItem="oew-KW-Ouh" secondAttribute="bottom" id="fgH-Ql-a0y"/>
                             <constraint firstItem="KSZ-wv-tLZ" firstAttribute="width" secondItem="EIP-Nm-lWK" secondAttribute="width" multiplier="0.5" id="oRa-G6-bRU"/>
@@ -170,8 +202,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="playerBigImage" destination="KSZ-wv-tLZ" id="zhc-NH-m0m"/>
+                        <outlet property="avatarBigImage" destination="KSZ-wv-tLZ" id="u0B-7w-NiG"/>
+                        <outlet property="loreImage" destination="wqU-eq-MUf" id="vsW-6W-jd2"/>
+                        <outlet property="nameLabel" destination="xQo-pc-l3s" id="Cgv-54-McG"/>
                         <outlet property="purchaseButton" destination="g93-ff-dpB" id="Wey-nn-orJ"/>
+                        <outlet property="roleImage" destination="xwk-o1-SZ5" id="tvb-7d-3bk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXO-l8-fWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,7 +261,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.38153798309999998" green="0.11906949159999999" blue="0.46873363870000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.38153798309999998" green="0.11906949159999999" blue="0.46873363870000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="6TX-fC-Gpn" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -246,6 +288,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4W9-Us-LBb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.38153798309999998" green="0.11906949159999999" blue="0.46873363870000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.38153798309999998" green="0.11906949159999999" blue="0.46873363870000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
