@@ -15,17 +15,38 @@ class XcuitUITests: XCTestCase {
         super.setUp()
         
         continueAfterFailure = false
-        XCUIApplication().launch()
+        app.launch()
     }
     
-    override func tearDown() {
-        super.tearDown()
-        app.terminate()
+    func test01ShowVisiblePlayerFromList() {
+        // Tap the first row of Sylvanas
+        app.tables.cells["Sylvanas"].tap()
+        
+        // Wait until the navigation animation ends
+        let player = app.images["sylvanas-big"]
+        let exists = NSPredicate(format: "exists == true")
+        expectationForPredicate(exists, evaluatedWithObject: player, handler: nil)
+        waitForExpectationsWithTimeout(2, handler: nil)
+        
+        // Check if the image of Sylvanas exists with the NSPredicate 'exists'
+        XCTAssert(player.exists, "The Player displayed doesn't match the Player selected.")
+        
+        // Tap the back button
+        app.navigationBars.buttons["Players"].tap()
+        
     }
     
-    
-    
-    func testSelectSecondTab() {
-        app.tabBars.buttons["Second"].tap()
+    func test02ShowHiddenPlayerFromList() {
+        // Tap the last row of Artanis, which isn't visible
+        app.tables.cells["Artanis"].tap()
+        
+        let player = app.images["artanis-big"]
+        let exists = NSPredicate(format: "exists == true")
+        expectationForPredicate(exists, evaluatedWithObject: player, handler: nil)
+        waitForExpectationsWithTimeout(2, handler: nil)
+        
+        XCTAssert(app.images["artanis-big"].exists, "The Player displayed doesn't match the Player selected.")
+        
+        app.navigationBars.buttons["Players"].tap()
     }
 }

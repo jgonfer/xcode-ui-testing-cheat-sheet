@@ -26,5 +26,7 @@ class PlayerCell: UITableViewCell {
         roleImage.image = UIImage(named: Role.image[player.role.hashValue])
         loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])
         statusImage.image = UIImage(named: player.owned ? "owned" : "owned-no")
+        
+        accessibilityLabel = player.name
     }
 }

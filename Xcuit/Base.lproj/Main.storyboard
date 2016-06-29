@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="global-bg" translatesAutoresizingMaskIntoConstraints="NO" id="AnW-93-lGA">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-BQ-RLT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-BQ-RLT" userLabel="players">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -146,21 +146,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="valla-big" translatesAutoresizingMaskIntoConstraints="NO" id="KSZ-wv-tLZ">
                                 <rect key="frame" x="150" y="74" width="300" height="240"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g93-ff-dpB">
-                                <rect key="frame" x="260" y="471" width="80" height="30"/>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.87450980392156863" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="gOs-iF-Xzq"/>
-                                    <constraint firstAttribute="height" constant="30" id="zYJ-3U-723"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Buy">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buyPlayer:" destination="oNf-An-UJd" eventType="touchUpInside" id="PDI-hd-9ao"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gow-0Z-gU6">
                                 <rect key="frame" x="150" y="322" width="300" height="46"/>
                                 <subviews>
@@ -192,10 +177,8 @@
                             <constraint firstItem="IoA-Cb-Pay" firstAttribute="leading" secondItem="EIP-Nm-lWK" secondAttribute="leading" id="QNn-Da-XOv"/>
                             <constraint firstAttribute="trailing" secondItem="IoA-Cb-Pay" secondAttribute="trailing" id="UNu-9f-fl6"/>
                             <constraint firstItem="gow-0Z-gU6" firstAttribute="top" secondItem="KSZ-wv-tLZ" secondAttribute="bottom" constant="8" id="V7w-hc-gEG"/>
-                            <constraint firstItem="S2l-be-eGD" firstAttribute="top" secondItem="g93-ff-dpB" secondAttribute="bottom" constant="50" id="Wi9-hr-w8e"/>
                             <constraint firstItem="IoA-Cb-Pay" firstAttribute="top" secondItem="oew-KW-Ouh" secondAttribute="bottom" id="fgH-Ql-a0y"/>
                             <constraint firstItem="KSZ-wv-tLZ" firstAttribute="width" secondItem="EIP-Nm-lWK" secondAttribute="width" multiplier="0.5" id="oRa-G6-bRU"/>
-                            <constraint firstItem="g93-ff-dpB" firstAttribute="centerX" secondItem="EIP-Nm-lWK" secondAttribute="centerX" id="pjj-Vi-QKh"/>
                             <constraint firstItem="S2l-be-eGD" firstAttribute="top" secondItem="IoA-Cb-Pay" secondAttribute="bottom" id="r2P-XF-Y6X"/>
                             <constraint firstItem="KSZ-wv-tLZ" firstAttribute="top" secondItem="oew-KW-Ouh" secondAttribute="bottom" constant="10" id="snd-jX-VkR"/>
                             <constraint firstItem="KSZ-wv-tLZ" firstAttribute="centerX" secondItem="EIP-Nm-lWK" secondAttribute="centerX" id="vDj-Zs-hc4"/>
@@ -205,7 +188,6 @@
                         <outlet property="avatarBigImage" destination="KSZ-wv-tLZ" id="u0B-7w-NiG"/>
                         <outlet property="loreImage" destination="wqU-eq-MUf" id="vsW-6W-jd2"/>
                         <outlet property="nameLabel" destination="xQo-pc-l3s" id="Cgv-54-McG"/>
-                        <outlet property="purchaseButton" destination="g93-ff-dpB" id="Wey-nn-orJ"/>
                         <outlet property="roleImage" destination="xwk-o1-SZ5" id="tvb-7d-3bk"/>
                     </connections>
                 </viewController>
