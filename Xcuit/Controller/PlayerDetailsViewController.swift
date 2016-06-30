@@ -37,16 +37,16 @@ class PlayerDetailsViewController: UIViewController {
         image = image.stringByReplacingOccurrencesOfString(" ", withString: "-")
         image = image.stringByReplacingOccurrencesOfString("'", withString: "-")
         avatarBigImage.image = UIImage(named: "\(image)-big")
-        avatarBigImage.accessibilityLabel = "\(image)-big"
+        avatarBigImage.accessibilityIdentifier = "\(image)-big"
         
         nameLabel.text = player.name
-        nameLabel.accessibilityLabel = player.name
+        nameLabel.accessibilityIdentifier = player.name
         
         roleImage.image = UIImage(named: Role.image[player.role.hashValue])
-        roleImage.accessibilityLabel = Role.image[player.role.hashValue]
+        roleImage.accessibilityIdentifier = Role.image[player.role.hashValue]
         
         loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])
-        loreImage.accessibilityLabel = Lore.image[player.lore.hashValue]
+        loreImage.accessibilityIdentifier = Lore.image[player.lore.hashValue]
         
         let screenMidWidth = CGRectGetMidX(view.bounds)
         let screenHeight = CGRectGetHeight(view.bounds)
@@ -63,6 +63,7 @@ class PlayerDetailsViewController: UIViewController {
             messageLabel.text = "You already purchased this character"
             messageLabel.alpha = 0
             messageLabel.textColor = UIColor.whiteColor()
+            messageLabel.accessibilityIdentifier = "message-label"
             self.view.addSubview(messageLabel)
             
             UIView.animateWithDuration(1, delay: 0.5, options: .CurveEaseIn, animations: {
@@ -84,6 +85,7 @@ class PlayerDetailsViewController: UIViewController {
             purchaseButton.enabled = !player.owned
             purchaseButton.addTarget(self, action: #selector(PlayerDetailsViewController.buyPlayer(_:)), forControlEvents: .TouchUpInside)
             purchaseButton.setTitle("Buy", forState: .Normal)
+            purchaseButton.accessibilityIdentifier = "purchase-button"
             
             UIView.animateWithDuration(1, delay: 1, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: .CurveEaseIn, animations: {
                 self.view.addSubview(purchaseButton)
@@ -96,8 +98,6 @@ class PlayerDetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    // MARK: IBAction methods
     
     func buyPlayer(sender: UIButton) {
         player.owned = true

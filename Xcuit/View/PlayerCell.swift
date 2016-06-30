@@ -22,11 +22,15 @@ class PlayerCell: UITableViewCell {
         image = image.stringByReplacingOccurrencesOfString(" ", withString: "-")
         image = image.stringByReplacingOccurrencesOfString("'", withString: "-")
         avatarImage.image = UIImage(named: image)
-        nameLabel.text = player.name
+        avatarImage.accessibilityIdentifier = "\(image)-img"
+        nameLabel.text = "\(player.name)-label"
         roleImage.image = UIImage(named: Role.image[player.role.hashValue])
+        roleImage.accessibilityIdentifier = "\(image)-\(Role.image[player.role.hashValue])"
         loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])
+        loreImage.accessibilityIdentifier = "\(image)-\(Lore.image[player.lore.hashValue])"
         statusImage.image = UIImage(named: player.owned ? "owned" : "owned-no")
+        statusImage.accessibilityIdentifier = "\(image)-\(player.owned ? "owned" : "owned-no")"
         
-        accessibilityLabel = player.name
+        accessibilityIdentifier = player.name
     }
 }

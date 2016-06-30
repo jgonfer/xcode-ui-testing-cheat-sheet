@@ -23,7 +23,7 @@ class PlayersListViewController: UIViewController {
     private func setupView() {
         getPlayersList()
         tableView.contentInset = UIEdgeInsetsMake(65, 0, 0, 0)
-        tableView.accessibilityLabel = "players"
+        tableView.accessibilityIdentifier = "players"
     }
     
     override func didReceiveMemoryWarning() {
