@@ -11,8 +11,11 @@ import UIKit
 class PlayersListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    var pullToRefresh: UIRefreshControl!
+    
     var players: [Player]?
     var selectedIndex: NSIndexPath?
+    var ordered = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,13 @@ class PlayersListViewController: UIViewController {
         getPlayersList()
         tableView.contentInset = UIEdgeInsetsMake(65, 0, 0, 0)
         tableView.accessibilityIdentifier = "players"
+        
+        pullToRefresh = UIRefreshControl()
+        pullToRefresh.tintColor = purchaseButtonEnabled
+        pullToRefresh.attributedTitle = NSAttributedString(string: "Pull to \(ordered ? "mess up" : "order")",
+                                                           attributes: [NSForegroundColorAttributeName:purchaseButtonEnabled])
+        pullToRefresh.addTarget(self, action: #selector(PlayersListViewController.refreshPlayersList), forControlEvents: UIControlEvents.ValueChanged)
+        tableView.addSubview(pullToRefresh)
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,18 +41,47 @@ class PlayersListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getPlayersList() {
+    func refreshPlayersList() {
+        ordered = !ordered
+        getPlayersList()
+        tableView.reloadData()
+        
+        pullToRefresh.endRefreshing()
+        UIView.animateWithDuration(0.25, animations: {
+            self.pullToRefresh.alpha = 0
+            }) { (_) in
+                self.pullToRefresh.attributedTitle = NSAttributedString(string: "Pull to \(self.ordered ? "mess up" : "order")",
+                                                                   attributes: [NSForegroundColorAttributeName:purchaseButtonEnabled])
+                self.pullToRefresh.alpha = 1
+        }
+        
+    }
+    
+    private func getPlayersList() {
         players = [Player]()
-        players?.append(Player(role: .Specialist, name: "Sylvanas", lore: .Warcraft))
-        players?.append(Player(role: .Assassin, name: "Valla", lore: .Diablo))
-        players?.append(Player(role: .Warrior, name: "Arthas", lore: .Warcraft))
-        players?.append(Player(role: .Specialist, name: "The Lost Vikings", lore: .LostVikings))
-        players?.append(Player(role: .Support, name: "Malfurion", lore: .Warcraft))
-        players?.append(Player(role: .Specialist, name: "Gazlowe", lore: .Warcraft))
-        players?.append(Player(role: .Assassin, name: "Nova", lore: .Starcraft))
-        players?.append(Player(role: .Support, name: "Uther", lore: .Warcraft))
-        players?.append(Player(role: .Specialist, name: "Azmodan", lore: .Diablo))
-        players?.append(Player(role: .Warrior, name: "Artanis", lore: .Starcraft))
+        if ordered {
+            players?.append(Player(role: .Warrior, name: "Artanis", lore: .Starcraft))
+            players?.append(Player(role: .Warrior, name: "Arthas", lore: .Warcraft))
+            players?.append(Player(role: .Specialist, name: "Azmodan", lore: .Diablo))
+            players?.append(Player(role: .Specialist, name: "Gazlowe", lore: .Warcraft))
+            players?.append(Player(role: .Support, name: "Malfurion", lore: .Warcraft))
+            players?.append(Player(role: .Assassin, name: "Nova", lore: .Starcraft))
+            players?.append(Player(role: .Specialist, name: "Sylvanas", lore: .Warcraft))
+            players?.append(Player(role: .Specialist, name: "The Lost Vikings", lore: .LostVikings))
+            players?.append(Player(role: .Support, name: "Uther", lore: .Warcraft))
+            players?.append(Player(role: .Assassin, name: "Valla", lore: .Diablo))
+        } else {
+            players?.append(Player(role: .Specialist, name: "Sylvanas", lore: .Warcraft))
+            players?.append(Player(role: .Assassin, name: "Valla", lore: .Diablo))
+            players?.append(Player(role: .Warrior, name: "Arthas", lore: .Warcraft))
+            players?.append(Player(role: .Specialist, name: "The Lost Vikings", lore: .LostVikings))
+            players?.append(Player(role: .Support, name: "Malfurion", lore: .Warcraft))
+            players?.append(Player(role: .Specialist, name: "Gazlowe", lore: .Warcraft))
+            players?.append(Player(role: .Assassin, name: "Nova", lore: .Starcraft))
+            players?.append(Player(role: .Support, name: "Uther", lore: .Warcraft))
+            players?.append(Player(role: .Specialist, name: "Azmodan", lore: .Diablo))
+            players?.append(Player(role: .Warrior, name: "Artanis", lore: .Starcraft))
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

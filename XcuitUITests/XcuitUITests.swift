@@ -100,6 +100,21 @@ class XcuitUITests: XCTestCase {
         let messageLabel = app.staticTexts["message-label"]
         waitForExists(messageLabel, waitSeconds: 2)
     }
+    
+    func test05PullToOrderPlayersList() {
+        let playerDisordered = "Sylvanas"
+        let playerOrdered = "Artanis"
+        // Get first row
+        let firstCell = app.tables["players"].cells.elementBoundByIndex(0)
+        // Check that the first row is Sylvanas
+        XCTAssert(firstCell.identifier == playerDisordered)
+        let start = firstCell.coordinateWithNormalizedOffset(CGVectorMake(0, 0))
+        let finish = firstCell.coordinateWithNormalizedOffset(CGVectorMake(0, 5))
+        // Pull from start point to end point
+        start.pressForDuration(0, thenDragToCoordinate: finish)
+        // Check that the first row has changed and now is Artanis
+        XCTAssert(firstCell.identifier == playerOrdered)
+    }
 }
 
 extension XCTestCase {
@@ -128,9 +143,6 @@ extension XCTestCase {
             }
         }
     }
-    
-    
-    
     
     func waitForExists(element: XCUIElement, waitSeconds: Double, file: String = #file, line: UInt = #line) {
         let existsPredicate = NSPredicate(format: "exists == true")
