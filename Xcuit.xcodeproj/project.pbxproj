@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C91A5C109508E6614238AAD /* Pods_Xcuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C235D729ACDD838EE039C09B /* Pods_Xcuit.framework */; };
+		1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */; };
 		1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903CD1D22935B00116CA4 /* AppDelegate.swift */; };
 		1D9903D21D22935B00116CA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903D11D22935B00116CA4 /* SecondViewController.swift */; };
 		1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D31D22935B00116CA4 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcuitUITests_Gherkin.swift; sourceTree = "<group>"; };
 		1D9903CA1D22935B00116CA4 /* Xcuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903CD1D22935B00116CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D9903D11D22935B00116CA4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */,
+				1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */,
 				1D9903F11D22935B00116CA4 /* Info.plist */,
 			);
 			path = XcuitUITests;
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */,
 				1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +514,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Xcuit/Common/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -523,6 +528,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Xcuit/Common/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.Xcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -534,6 +540,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.XcuitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Xcuit;
@@ -546,6 +553,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgonfer.XcuitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Xcuit;
