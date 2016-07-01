@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C91A5C109508E6614238AAD /* Pods_Xcuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C235D729ACDD838EE039C09B /* Pods_Xcuit.framework */; };
 		1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */; };
+		1D590D8E1D26AE9500249C90 /* PlayerListStepDefintions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */; };
 		1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903CD1D22935B00116CA4 /* AppDelegate.swift */; };
 		1D9903D21D22935B00116CA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903D11D22935B00116CA4 /* SecondViewController.swift */; };
 		1D9903D51D22935B00116CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9903D31D22935B00116CA4 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040C1D22C0DB00116CA4 /* Role.swift */; };
 		1D99040F1D22C11900116CA4 /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040E1D22C11900116CA4 /* Lore.swift */; };
 		1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */; };
+		5FFFDE3D6D06A5EAF121D838 /* Pods_Xcuit_XcuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A0DDB6B64FE3C6C39FA082 /* Pods_Xcuit_XcuitUITests.framework */; };
 		6B61A3261D22F7AB00F7A107 /* Players.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B61A3251D22F7AB00F7A107 /* Players.xcassets */; };
 		C37A925028E0D79EF4058D9A /* Pods_XcuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcuitUITests_Gherkin.swift; sourceTree = "<group>"; };
+		1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerListStepDefintions.swift; path = StepDefinitions/PlayerListStepDefintions.swift; sourceTree = "<group>"; };
 		1D9903CA1D22935B00116CA4 /* Xcuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9903CD1D22935B00116CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D9903D11D22935B00116CA4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +60,12 @@
 		38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcuitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B61A3251D22F7AB00F7A107 /* Players.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Players.xcassets; sourceTree = "<group>"; };
+		77A0DDB6B64FE3C6C39FA082 /* Pods_Xcuit_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E23B4E05A8B5CA51D190533 /* Pods-Xcuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xcuit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xcuit/Pods-Xcuit.release.xcconfig"; sourceTree = "<group>"; };
+		B799E6671653BB77D1B22784 /* Pods-Xcuit-XcuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xcuit-XcuitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C15DEF82B4D270F4894E9287 /* Pods-XcuitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcuitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C235D729ACDD838EE039C09B /* Pods_Xcuit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAD519C42F094F70F04F4C6 /* Pods-Xcuit-XcuitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xcuit-XcuitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +82,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37A925028E0D79EF4058D9A /* Pods_XcuitUITests.framework in Frameworks */,
+				5FFFDE3D6D06A5EAF121D838 /* Pods_Xcuit_XcuitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D590D8C1D26AE5800249C90 /* StepDefinitions */ = {
+			isa = PBXGroup;
+			children = (
+				1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */,
+			);
+			name = StepDefinitions;
+			sourceTree = "<group>";
+		};
 		1D9903C11D22935B00116CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 			children = (
 				1D9903EF1D22935B00116CA4 /* XcuitUITests.swift */,
 				1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */,
+				1D590D8C1D26AE5800249C90 /* StepDefinitions */,
 				1D9903F11D22935B00116CA4 /* Info.plist */,
 			);
 			path = XcuitUITests;
@@ -158,6 +174,8 @@
 				8E23B4E05A8B5CA51D190533 /* Pods-Xcuit.release.xcconfig */,
 				C15DEF82B4D270F4894E9287 /* Pods-XcuitUITests.debug.xcconfig */,
 				38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */,
+				FEAD519C42F094F70F04F4C6 /* Pods-Xcuit-XcuitUITests.debug.xcconfig */,
+				B799E6671653BB77D1B22784 /* Pods-Xcuit-XcuitUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -180,6 +198,7 @@
 			children = (
 				C235D729ACDD838EE039C09B /* Pods_Xcuit.framework */,
 				66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */,
+				77A0DDB6B64FE3C6C39FA082 /* Pods_Xcuit_XcuitUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8251EEC2D0DC0C67D20B690E /* [CP] Copy Pods Resources */ = {
@@ -386,6 +405,7 @@
 			files = (
 				1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */,
 				1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */,
+				1D590D8E1D26AE9500249C90 /* PlayerListStepDefintions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +556,7 @@
 		};
 		1D9903FB1D22935B00116CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C15DEF82B4D270F4894E9287 /* Pods-XcuitUITests.debug.xcconfig */;
+			baseConfigurationReference = FEAD519C42F094F70F04F4C6 /* Pods-Xcuit-XcuitUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -549,7 +569,7 @@
 		};
 		1D9903FC1D22935B00116CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */;
+			baseConfigurationReference = B799E6671653BB77D1B22784 /* Pods-Xcuit-XcuitUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
