@@ -1,0 +1,6 @@
+framework module Pods_Xcuit {
+  umbrella header "Pods-Xcuit-umbrella.h"
+
+  export *
+  module * { export * }
+}
