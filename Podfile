@@ -6,11 +6,11 @@ target 'Xcuit' do
   use_frameworks!
 
   # Pods for Xcuit
+  pod 'XCTest-Gherkin'
 
   target 'XcuitUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'XCTest-Gherkin'
   end
 
 end
