@@ -38,10 +38,6 @@ class XcuitUITests: XCTestCase {
         
         // Check if the image of Sylvanas exists with the NSPredicate 'exists'
         XCTAssert(playerImage.exists, "The Player displayed doesn't match the Player selected.")
-        
-        // Tap the back button
-        app.navigationBars.buttons["Players"].tap()
-        
     }
     
     func test02ShowHiddenPlayerFromList() {
@@ -57,9 +53,6 @@ class XcuitUITests: XCTestCase {
         
         // Check if the image of Artanis exists with the NSPredicate 'exists'
         XCTAssert(playerImage.exists, "The Player displayed doesn't match the Player selected.")
-        
-        // Tap the back button
-        app.navigationBars.buttons["Players"].tap()
     }
     
     func test03PurchaseANonOwnedCharacter() {
