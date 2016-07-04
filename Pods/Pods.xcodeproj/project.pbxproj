@@ -7,85 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AD5791313019B70EA87BE5ABA582E0D /* Pods-Xcuit-XcuitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C4A04764058F0CD2B24FF97A5556FE /* Pods-Xcuit-XcuitUITests-dummy.m */; };
-		12D5CAB4A3D35D8C5D6740005D3FC7CA /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB711E808EAE414EE228B80A2A6E203 /* XCTestCase+Gherkin.swift */; };
-		1CD7D5DDFF2C4C1EE1D4CAB6B3BC2351 /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B1901AC1B0F05FA5075A1D34B421C /* StringGherkinExtension.swift */; };
-		2507E4ACCFB85D17F4593C6F7E35E3A6 /* Pods-Xcuit-XcuitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00692A58C3B1E37FBCE76C7F6B6AA483 /* Pods-Xcuit-XcuitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A77194C60FD63DC52F28D34FA96378B /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6434B6006E2F4F7DC3C71603F9033B66 /* XCTest-Gherkin-dummy.m */; };
-		3AB7CD6243E89BA31591CA561A453480 /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44BD35A450192EDB1681E5A56FFCBB /* ClassHelperMethods.swift */; };
-		48AC00E684EFFE5EF499688C7BF71F9A /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF62A985849999959AB2B713151ECBF /* StepDefiner.swift */; };
-		4920FB2F167A40AB754EEDEDB0ED3DE2 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB1FF389928822AABA5E29BA9682273 /* Step.swift */; };
-		51AA87E98E83E174604E8E8866D2E33C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */; };
-		5747FE3059E04D2080EF1E926AE82A54 /* Pods-Xcuit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1B79D5F3BD4F3CF0519FF81ED9F5C6 /* Pods-Xcuit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F7ED57C0DF945C436694C0F6860F12 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514EE96C14F7DE1C30A745755F96BCB8 /* Example.swift */; };
-		80FE4EE5097808C128E3BFD9A1038EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
-		D1057EF9706EF818AA275C50AA6A5D07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		017467CB7E065F229E57B54783C1115C /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B1901AC1B0F05FA5075A1D34B421C /* StringGherkinExtension.swift */; };
+		383A5A3D51C301942B73BE2504FB708B /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6434B6006E2F4F7DC3C71603F9033B66 /* XCTest-Gherkin-dummy.m */; };
+		520B9793C212E39D6EF12DE5B28CF7E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		5747FE3059E04D2080EF1E926AE82A54 /* Pods-Xcuit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 935F476834562AAFAC3CD66D662DA812 /* Pods-Xcuit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B7B51345E30046CC552D3D256E0D1A9 /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF62A985849999959AB2B713151ECBF /* StepDefiner.swift */; };
+		74536BF35EF721C9391E0D151B6EA535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		7B8E3AAFE67AE1BCC813AFCBEEF9F95D /* Pods-XcuitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AF9632EBDD2E8826DAC21957E23AD0 /* Pods-XcuitUITests-dummy.m */; };
+		85DD0EC47DC7C20954E2B90359F441F6 /* Pods-XcuitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B1D1A85FEEDCCE198B15EB24743202 /* Pods-XcuitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92E2F0A4225B8509E7205CB202EAAFB1 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB1FF389928822AABA5E29BA9682273 /* Step.swift */; };
+		95E30C5DEB0A11F907901E5FD7765429 /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB711E808EAE414EE228B80A2A6E203 /* XCTestCase+Gherkin.swift */; };
+		96CA528D72825D03E9438796D33F54AF /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44BD35A450192EDB1681E5A56FFCBB /* ClassHelperMethods.swift */; };
+		99FD1D99EC2C2652BE4D44CC2E19DBA7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514EE96C14F7DE1C30A745755F96BCB8 /* Example.swift */; };
+		9C1362D09166DA03B6013DEEFA38D181 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */; };
 		E05BA61CCA243A5378FB0ABE213C31F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
-		E2BD23126D6FBD537B8A9F7FC2C04F19 /* XCTestCase+GherkinStepsChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69869567A0A0B6A732941F4AA074B64C /* XCTestCase+GherkinStepsChecker.swift */; };
-		EC22265DA259361E45331B7CABB819AC /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2136B208EF313767D18F1EA06D710 /* ColorLog.swift */; };
-		ED3F23324A3B927A4A212FC8B55F539B /* Pods-Xcuit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B12D6270AE3763C40A3EFC75D3BDADA /* Pods-Xcuit-dummy.m */; };
-		F0596C97451B30F1D0FA5C1D0195EDAE /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F891EE89C4A6F972D2CDEEC15768AA /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90926AB32B8D7D7CCB7A91B8A986437 /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F891EE89C4A6F972D2CDEEC15768AA /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA679203AA325E446BF6BEC71056B1D /* XCTestCase+GherkinStepsChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69869567A0A0B6A732941F4AA074B64C /* XCTestCase+GherkinStepsChecker.swift */; };
+		ECEA3D0B11D769022E96440E84C8CD9B /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2136B208EF313767D18F1EA06D710 /* ColorLog.swift */; };
+		ED3F23324A3B927A4A212FC8B55F539B /* Pods-Xcuit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96AD35B207D6ECC809A92FE382472F /* Pods-Xcuit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F808B21566A8975298C8862C205F40AF /* PBXContainerItemProxy */ = {
+		D457143E24D96C35FFA0EE0067BB1A65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7E41F0CB4885FD7D47D046183740CA4;
+			remoteGlobalIDString = AC7344D17B783CEC9ABEAEA4EBBDF10E;
 			remoteInfo = "XCTest-Gherkin";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00692A58C3B1E37FBCE76C7F6B6AA483 /* Pods-Xcuit-XcuitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Xcuit-XcuitUITests-umbrella.h"; sourceTree = "<group>"; };
-		007B5A2526A12C7453FEE8902B8A267E /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTest_Gherkin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		056B1901AC1B0F05FA5075A1D34B421C /* StringGherkinExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringGherkinExtension.swift; path = Pod/Core/StringGherkinExtension.swift; sourceTree = "<group>"; };
+		06189392D941B9E6A78ADAEC113FAE12 /* Pods_Xcuit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB711E808EAE414EE228B80A2A6E203 /* XCTestCase+Gherkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Gherkin.swift"; path = "Pod/Core/XCTestCase+Gherkin.swift"; sourceTree = "<group>"; };
 		0FB1FF389928822AABA5E29BA9682273 /* Step.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Step.swift; path = Pod/Core/Step.swift; sourceTree = "<group>"; };
-		1B12D6270AE3763C40A3EFC75D3BDADA /* Pods-Xcuit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Xcuit-dummy.m"; sourceTree = "<group>"; };
+		0FBD840C718E1F64A84834B1E7C4D868 /* Pods-Xcuit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Xcuit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1753FC30A3782A016FED2B9004D316DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18776EB02B8F9993E644A6EE4F0B339A /* Pods-Xcuit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-frameworks.sh"; sourceTree = "<group>"; };
 		25F891EE89C4A6F972D2CDEEC15768AA /* XCTest-Gherkin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-umbrella.h"; sourceTree = "<group>"; };
 		287021F7C8EA21E3D76590BBA015401C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4053966638982DA0D31F78416FB551CC /* Pods-Xcuit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-frameworks.sh"; sourceTree = "<group>"; };
-		42BEAF27BA04BC1D2A1080A6FB94368F /* Pods-Xcuit-XcuitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Xcuit-XcuitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DC69BEB5ED2384C26C422D04EA8F69C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D1248BCFDEA4A37B9066DFE64888BE /* Pods-XcuitUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XcuitUITests-resources.sh"; sourceTree = "<group>"; };
+		39A7B087A1E35D3087D578111729EA22 /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTest_Gherkin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		438ABB99427E089D1B54B2D6A1E19619 /* XCTest-Gherkin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-prefix.pch"; sourceTree = "<group>"; };
-		4FF8B93AEEB9556BABEBC6049336F67A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		505368CCD25B2892673F1444EF280E4C /* Pods-Xcuit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Xcuit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		469C6CA018C49921E51FDDC83C881C2C /* Pods-Xcuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit.debug.xcconfig"; sourceTree = "<group>"; };
+		46C2DEE80DE982A59C0C954AEF6F6C26 /* Pods-Xcuit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Xcuit.modulemap"; sourceTree = "<group>"; };
+		4B5F1EF5101C6C2CF2BC400E414951BE /* Pods-XcuitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XcuitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5051B2D59FFF7F9E9CC907EC0952F90C /* Pods-XcuitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XcuitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		514EE96C14F7DE1C30A745755F96BCB8 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Pod/Core/Example.swift; sourceTree = "<group>"; };
-		571B053AAB409FE4C299B9AB6101C5D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57C4A04764058F0CD2B24FF97A5556FE /* Pods-Xcuit-XcuitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Xcuit-XcuitUITests-dummy.m"; sourceTree = "<group>"; };
-		57DD8F5E4D25EBBB1F6ABBDCDE76C018 /* Pods-Xcuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit.release.xcconfig"; sourceTree = "<group>"; };
-		5942DDD0DF5E4CCE080AEE84D1E8C867 /* Pods-Xcuit-XcuitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-XcuitUITests-frameworks.sh"; sourceTree = "<group>"; };
+		56F69EC3A323A872FB86BB7B8F890256 /* Pods-XcuitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XcuitUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6434B6006E2F4F7DC3C71603F9033B66 /* XCTest-Gherkin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCTest-Gherkin-dummy.m"; sourceTree = "<group>"; };
 		69869567A0A0B6A732941F4AA074B64C /* XCTestCase+GherkinStepsChecker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+GherkinStepsChecker.swift"; path = "Pod/Core/XCTestCase+GherkinStepsChecker.swift"; sourceTree = "<group>"; };
-		6D9FBD82FB18A9EDC082B4784225AE4E /* Pods-Xcuit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Xcuit-acknowledgements.plist"; sourceTree = "<group>"; };
-		71391366281A783C85706FAEB8B050CC /* Pods_Xcuit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B1B79D5F3BD4F3CF0519FF81ED9F5C6 /* Pods-Xcuit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Xcuit-umbrella.h"; sourceTree = "<group>"; };
-		8C7D0245EF600CC64799FA24A6238307 /* Pods-Xcuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit.debug.xcconfig"; sourceTree = "<group>"; };
-		8F66CCBE2D09A133909C45934B034180 /* Pods-Xcuit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Xcuit.modulemap"; sourceTree = "<group>"; };
+		8180A5160EC25C7C7E561BCFC4D94EBE /* Pods-Xcuit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Xcuit-acknowledgements.plist"; sourceTree = "<group>"; };
+		935F476834562AAFAC3CD66D662DA812 /* Pods-Xcuit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Xcuit-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F4A89FFD5DC41418497807ABF10479C /* Pods_Xcuit_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AAAA6BEC31476BD87D2CE4595C44F2 /* Pods_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ADFA31AE61C1819518C4CF0DD4295FBA /* Pods-Xcuit-XcuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit-XcuitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B6E200BFB842A044032AF675B13D7659 /* Pods-Xcuit-XcuitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Xcuit-XcuitUITests.modulemap"; sourceTree = "<group>"; };
+		B37E42AFD5812A449B57415CBD160DBB /* Pods-XcuitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XcuitUITests.modulemap"; sourceTree = "<group>"; };
 		B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE440A1EC5C081CF5B58B7A6D1C8196F /* Pods-Xcuit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-resources.sh"; sourceTree = "<group>"; };
 		BFBADDE20D5139B731A8E63E2BDA0466 /* XCTest-Gherkin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.xcconfig"; sourceTree = "<group>"; };
 		CA44BD35A450192EDB1681E5A56FFCBB /* ClassHelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHelperMethods.swift; path = Pod/Core/ClassHelperMethods.swift; sourceTree = "<group>"; };
 		CDEB910D73BA6EFCB5E46CE61DE9E400 /* XCTest-Gherkin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "XCTest-Gherkin.modulemap"; sourceTree = "<group>"; };
-		CEC7737C5994E4C3F634974B324EA14A /* Pods-Xcuit-XcuitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit-XcuitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D5FCBC37417761D1BD5BF08E7E2EDEF0 /* Pods-Xcuit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-resources.sh"; sourceTree = "<group>"; };
-		EA536989D32CFE89BF29FB4EDF9593E4 /* Pods-Xcuit-XcuitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Xcuit-XcuitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC96AD35B207D6ECC809A92FE382472F /* Pods-Xcuit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Xcuit-dummy.m"; sourceTree = "<group>"; };
+		E55C322EBCD638D0547E04B135498D8E /* Pods-XcuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XcuitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA515C6CC97852E2EB32C857B8CE52FD /* Pods-XcuitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XcuitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE8D427F284E225A7DDBB2DDC7E01BA8 /* Pods-Xcuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Xcuit.release.xcconfig"; sourceTree = "<group>"; };
+		F4B1D1A85FEEDCCE198B15EB24743202 /* Pods-XcuitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XcuitUITests-umbrella.h"; sourceTree = "<group>"; };
 		F4F2136B208EF313767D18F1EA06D710 /* ColorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorLog.swift; path = Pod/Core/ColorLog.swift; sourceTree = "<group>"; };
-		F902A7A740BD5A62290007A79E85B7C5 /* Pods-Xcuit-XcuitUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Xcuit-XcuitUITests-resources.sh"; sourceTree = "<group>"; };
+		F5AF9632EBDD2E8826DAC21957E23AD0 /* Pods-XcuitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XcuitUITests-dummy.m"; sourceTree = "<group>"; };
 		FCF62A985849999959AB2B713151ECBF /* StepDefiner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepDefiner.swift; path = Pod/Core/StepDefiner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00501A9FA504C966FDAEC545ABEC8C06 /* Frameworks */ = {
+		8CB1AA9DC6752026AFE17175E218A793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1057EF9706EF818AA275C50AA6A5D07 /* Foundation.framework in Frameworks */,
+				74536BF35EF721C9391E0D151B6EA535 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B98856D7373BD49BF910640AD52D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520B9793C212E39D6EF12DE5B28CF7E4 /* Foundation.framework in Frameworks */,
+				9C1362D09166DA03B6013DEEFA38D181 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,15 +103,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05BA61CCA243A5378FB0ABE213C31F1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE84459FD4B6D9B6221DF78DB9535146 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80FE4EE5097808C128E3BFD9A1038EFE /* Foundation.framework in Frameworks */,
-				51AA87E98E83E174604E8E8866D2E33C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,39 +124,48 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		251ED8A1A18D0517E3ED14E9C27DE470 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F46E3B8E57AE7E3C1E2505D58EA1F7C8 /* Pods-Xcuit */,
-				3675303FDDE0A48BE49CC1164810BE3A /* Pods-Xcuit-XcuitUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3675303FDDE0A48BE49CC1164810BE3A /* Pods-Xcuit-XcuitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4FF8B93AEEB9556BABEBC6049336F67A /* Info.plist */,
-				B6E200BFB842A044032AF675B13D7659 /* Pods-Xcuit-XcuitUITests.modulemap */,
-				EA536989D32CFE89BF29FB4EDF9593E4 /* Pods-Xcuit-XcuitUITests-acknowledgements.markdown */,
-				42BEAF27BA04BC1D2A1080A6FB94368F /* Pods-Xcuit-XcuitUITests-acknowledgements.plist */,
-				57C4A04764058F0CD2B24FF97A5556FE /* Pods-Xcuit-XcuitUITests-dummy.m */,
-				5942DDD0DF5E4CCE080AEE84D1E8C867 /* Pods-Xcuit-XcuitUITests-frameworks.sh */,
-				F902A7A740BD5A62290007A79E85B7C5 /* Pods-Xcuit-XcuitUITests-resources.sh */,
-				00692A58C3B1E37FBCE76C7F6B6AA483 /* Pods-Xcuit-XcuitUITests-umbrella.h */,
-				CEC7737C5994E4C3F634974B324EA14A /* Pods-Xcuit-XcuitUITests.debug.xcconfig */,
-				ADFA31AE61C1819518C4CF0DD4295FBA /* Pods-Xcuit-XcuitUITests.release.xcconfig */,
-			);
-			name = "Pods-Xcuit-XcuitUITests";
-			path = "Target Support Files/Pods-Xcuit-XcuitUITests";
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D24B2EA016AE4FABDB5AF17F3FD9C222 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48A1FC9A80B3FD9A873C631AD3D9C678 /* Pods-XcuitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DC69BEB5ED2384C26C422D04EA8F69C /* Info.plist */,
+				B37E42AFD5812A449B57415CBD160DBB /* Pods-XcuitUITests.modulemap */,
+				5051B2D59FFF7F9E9CC907EC0952F90C /* Pods-XcuitUITests-acknowledgements.markdown */,
+				4B5F1EF5101C6C2CF2BC400E414951BE /* Pods-XcuitUITests-acknowledgements.plist */,
+				F5AF9632EBDD2E8826DAC21957E23AD0 /* Pods-XcuitUITests-dummy.m */,
+				56F69EC3A323A872FB86BB7B8F890256 /* Pods-XcuitUITests-frameworks.sh */,
+				37D1248BCFDEA4A37B9066DFE64888BE /* Pods-XcuitUITests-resources.sh */,
+				F4B1D1A85FEEDCCE198B15EB24743202 /* Pods-XcuitUITests-umbrella.h */,
+				EA515C6CC97852E2EB32C857B8CE52FD /* Pods-XcuitUITests.debug.xcconfig */,
+				E55C322EBCD638D0547E04B135498D8E /* Pods-XcuitUITests.release.xcconfig */,
+			);
+			name = "Pods-XcuitUITests";
+			path = "Target Support Files/Pods-XcuitUITests";
+			sourceTree = "<group>";
+		};
+		55F24FD66C5B130393C27729F633136A /* Pods-Xcuit */ = {
+			isa = PBXGroup;
+			children = (
+				1753FC30A3782A016FED2B9004D316DC /* Info.plist */,
+				46C2DEE80DE982A59C0C954AEF6F6C26 /* Pods-Xcuit.modulemap */,
+				0FBD840C718E1F64A84834B1E7C4D868 /* Pods-Xcuit-acknowledgements.markdown */,
+				8180A5160EC25C7C7E561BCFC4D94EBE /* Pods-Xcuit-acknowledgements.plist */,
+				DC96AD35B207D6ECC809A92FE382472F /* Pods-Xcuit-dummy.m */,
+				18776EB02B8F9993E644A6EE4F0B339A /* Pods-Xcuit-frameworks.sh */,
+				BE440A1EC5C081CF5B58B7A6D1C8196F /* Pods-Xcuit-resources.sh */,
+				935F476834562AAFAC3CD66D662DA812 /* Pods-Xcuit-umbrella.h */,
+				469C6CA018C49921E51FDDC83C881C2C /* Pods-Xcuit.debug.xcconfig */,
+				EE8D427F284E225A7DDBB2DDC7E01BA8 /* Pods-Xcuit.release.xcconfig */,
+			);
+			name = "Pods-Xcuit";
+			path = "Target Support Files/Pods-Xcuit";
 			sourceTree = "<group>";
 		};
 		5E2F86FB6E2C659CC8173CF8C51BBCD8 /* XCTest-Gherkin */ = {
@@ -168,14 +177,23 @@
 			path = "XCTest-Gherkin";
 			sourceTree = "<group>";
 		};
+		6E4036ABA7BEB18B3EF04C2695707601 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F24FD66C5B130393C27729F633136A /* Pods-Xcuit */,
+				48A1FC9A80B3FD9A873C631AD3D9C678 /* Pods-XcuitUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				AAE7B59EB0798C36588825FEFF48D587 /* Pods */,
-				C0BBE1B3A689CCBA662BF4EB6D5A1EBE /* Products */,
-				251ED8A1A18D0517E3ED14E9C27DE470 /* Targets Support Files */,
+				E1D47C1FFA5643FD5D7217A6655B8022 /* Products */,
+				6E4036ABA7BEB18B3EF04C2695707601 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,16 +203,6 @@
 				5E2F86FB6E2C659CC8173CF8C51BBCD8 /* XCTest-Gherkin */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C0BBE1B3A689CCBA662BF4EB6D5A1EBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				71391366281A783C85706FAEB8B050CC /* Pods_Xcuit.framework */,
-				9F4A89FFD5DC41418497807ABF10479C /* Pods_Xcuit_XcuitUITests.framework */,
-				007B5A2526A12C7453FEE8902B8A267E /* XCTest_Gherkin.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D24B2EA016AE4FABDB5AF17F3FD9C222 /* iOS */ = {
@@ -220,32 +228,32 @@
 			path = "../Target Support Files/XCTest-Gherkin";
 			sourceTree = "<group>";
 		};
-		F46E3B8E57AE7E3C1E2505D58EA1F7C8 /* Pods-Xcuit */ = {
+		E1D47C1FFA5643FD5D7217A6655B8022 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				571B053AAB409FE4C299B9AB6101C5D5 /* Info.plist */,
-				8F66CCBE2D09A133909C45934B034180 /* Pods-Xcuit.modulemap */,
-				505368CCD25B2892673F1444EF280E4C /* Pods-Xcuit-acknowledgements.markdown */,
-				6D9FBD82FB18A9EDC082B4784225AE4E /* Pods-Xcuit-acknowledgements.plist */,
-				1B12D6270AE3763C40A3EFC75D3BDADA /* Pods-Xcuit-dummy.m */,
-				4053966638982DA0D31F78416FB551CC /* Pods-Xcuit-frameworks.sh */,
-				D5FCBC37417761D1BD5BF08E7E2EDEF0 /* Pods-Xcuit-resources.sh */,
-				7B1B79D5F3BD4F3CF0519FF81ED9F5C6 /* Pods-Xcuit-umbrella.h */,
-				8C7D0245EF600CC64799FA24A6238307 /* Pods-Xcuit.debug.xcconfig */,
-				57DD8F5E4D25EBBB1F6ABBDCDE76C018 /* Pods-Xcuit.release.xcconfig */,
+				06189392D941B9E6A78ADAEC113FAE12 /* Pods_Xcuit.framework */,
+				95AAAA6BEC31476BD87D2CE4595C44F2 /* Pods_XcuitUITests.framework */,
+				39A7B087A1E35D3087D578111729EA22 /* XCTest_Gherkin.framework */,
 			);
-			name = "Pods-Xcuit";
-			path = "Target Support Files/Pods-Xcuit";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		778492D0C4CB00ECEDD1AF243D815047 /* Headers */ = {
+		A318EC38BF80A0D36D8878092F6740B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0596C97451B30F1D0FA5C1D0195EDAE /* XCTest-Gherkin-umbrella.h in Headers */,
+				85DD0EC47DC7C20954E2B90359F441F6 /* Pods-XcuitUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4B5EAB3806CC1C6853450524A5F917 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90926AB32B8D7D7CCB7A91B8A986437 /* XCTest-Gherkin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5747FE3059E04D2080EF1E926AE82A54 /* Pods-Xcuit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B352EBA8982C0B29E7F8A84F722151A9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2507E4ACCFB85D17F4593C6F7E35E3A6 /* Pods-Xcuit-XcuitUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,34 +282,34 @@
 			);
 			name = "Pods-Xcuit";
 			productName = "Pods-Xcuit";
-			productReference = 71391366281A783C85706FAEB8B050CC /* Pods_Xcuit.framework */;
+			productReference = 06189392D941B9E6A78ADAEC113FAE12 /* Pods_Xcuit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A59A06D00DEA994D6B4706FD08E32B60 /* Pods-Xcuit-XcuitUITests */ = {
+		357CFE800553BE5442E557B9CAF27175 /* Pods-XcuitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36562EE208D8626E1F0575BDD7C348B7 /* Build configuration list for PBXNativeTarget "Pods-Xcuit-XcuitUITests" */;
+			buildConfigurationList = 27544A84976F3AC1182833559E6661BA /* Build configuration list for PBXNativeTarget "Pods-XcuitUITests" */;
 			buildPhases = (
-				6FF229E2B0FB08BFF042A24B88C76703 /* Sources */,
-				00501A9FA504C966FDAEC545ABEC8C06 /* Frameworks */,
-				B352EBA8982C0B29E7F8A84F722151A9 /* Headers */,
+				56C4CD85C70C35FC7AE451C43C7AF616 /* Sources */,
+				8CB1AA9DC6752026AFE17175E218A793 /* Frameworks */,
+				A318EC38BF80A0D36D8878092F6740B8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0F6447AECE63D925EA03E1C48BE08159 /* PBXTargetDependency */,
+				97C3986EDA1AA2CDE7F0E80F03DC1820 /* PBXTargetDependency */,
 			);
-			name = "Pods-Xcuit-XcuitUITests";
-			productName = "Pods-Xcuit-XcuitUITests";
-			productReference = 9F4A89FFD5DC41418497807ABF10479C /* Pods_Xcuit_XcuitUITests.framework */;
+			name = "Pods-XcuitUITests";
+			productName = "Pods-XcuitUITests";
+			productReference = 95AAAA6BEC31476BD87D2CE4595C44F2 /* Pods_XcuitUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C7E41F0CB4885FD7D47D046183740CA4 /* XCTest-Gherkin */ = {
+		AC7344D17B783CEC9ABEAEA4EBBDF10E /* XCTest-Gherkin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76F6C4AFF6A1A9704C3555EFBAD753A2 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */;
+			buildConfigurationList = BC41676D30696F968B4891FE909A0BCD /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */;
 			buildPhases = (
-				5CAE2EB754260FE060C7838A6B601950 /* Sources */,
-				FE84459FD4B6D9B6221DF78DB9535146 /* Frameworks */,
-				778492D0C4CB00ECEDD1AF243D815047 /* Headers */,
+				8E242FCF5E2FEA6908852E8FB2914149 /* Sources */,
+				B2B98856D7373BD49BF910640AD52D84 /* Frameworks */,
+				AF4B5EAB3806CC1C6853450524A5F917 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -317,7 +317,7 @@
 			);
 			name = "XCTest-Gherkin";
 			productName = "XCTest-Gherkin";
-			productReference = 007B5A2526A12C7453FEE8902B8A267E /* XCTest_Gherkin.framework */;
+			productReference = 39A7B087A1E35D3087D578111729EA22 /* XCTest_Gherkin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +327,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -337,39 +337,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C0BBE1B3A689CCBA662BF4EB6D5A1EBE /* Products */;
+			productRefGroup = E1D47C1FFA5643FD5D7217A6655B8022 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00C1672F3D523A778020266C68B637B6 /* Pods-Xcuit */,
-				A59A06D00DEA994D6B4706FD08E32B60 /* Pods-Xcuit-XcuitUITests */,
-				C7E41F0CB4885FD7D47D046183740CA4 /* XCTest-Gherkin */,
+				357CFE800553BE5442E557B9CAF27175 /* Pods-XcuitUITests */,
+				AC7344D17B783CEC9ABEAEA4EBBDF10E /* XCTest-Gherkin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CAE2EB754260FE060C7838A6B601950 /* Sources */ = {
+		56C4CD85C70C35FC7AE451C43C7AF616 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB7CD6243E89BA31591CA561A453480 /* ClassHelperMethods.swift in Sources */,
-				EC22265DA259361E45331B7CABB819AC /* ColorLog.swift in Sources */,
-				79F7ED57C0DF945C436694C0F6860F12 /* Example.swift in Sources */,
-				4920FB2F167A40AB754EEDEDB0ED3DE2 /* Step.swift in Sources */,
-				48AC00E684EFFE5EF499688C7BF71F9A /* StepDefiner.swift in Sources */,
-				1CD7D5DDFF2C4C1EE1D4CAB6B3BC2351 /* StringGherkinExtension.swift in Sources */,
-				3A77194C60FD63DC52F28D34FA96378B /* XCTest-Gherkin-dummy.m in Sources */,
-				12D5CAB4A3D35D8C5D6740005D3FC7CA /* XCTestCase+Gherkin.swift in Sources */,
-				E2BD23126D6FBD537B8A9F7FC2C04F19 /* XCTestCase+GherkinStepsChecker.swift in Sources */,
+				7B8E3AAFE67AE1BCC813AFCBEEF9F95D /* Pods-XcuitUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FF229E2B0FB08BFF042A24B88C76703 /* Sources */ = {
+		8E242FCF5E2FEA6908852E8FB2914149 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD5791313019B70EA87BE5ABA582E0D /* Pods-Xcuit-XcuitUITests-dummy.m in Sources */,
+				96CA528D72825D03E9438796D33F54AF /* ClassHelperMethods.swift in Sources */,
+				ECEA3D0B11D769022E96440E84C8CD9B /* ColorLog.swift in Sources */,
+				99FD1D99EC2C2652BE4D44CC2E19DBA7 /* Example.swift in Sources */,
+				92E2F0A4225B8509E7205CB202EAAFB1 /* Step.swift in Sources */,
+				6B7B51345E30046CC552D3D256E0D1A9 /* StepDefiner.swift in Sources */,
+				017467CB7E065F229E57B54783C1115C /* StringGherkinExtension.swift in Sources */,
+				383A5A3D51C301942B73BE2504FB708B /* XCTest-Gherkin-dummy.m in Sources */,
+				95E30C5DEB0A11F907901E5FD7765429 /* XCTestCase+Gherkin.swift in Sources */,
+				EBA679203AA325E446BF6BEC71056B1D /* XCTestCase+GherkinStepsChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,44 +384,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F6447AECE63D925EA03E1C48BE08159 /* PBXTargetDependency */ = {
+		97C3986EDA1AA2CDE7F0E80F03DC1820 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "XCTest-Gherkin";
-			target = C7E41F0CB4885FD7D47D046183740CA4 /* XCTest-Gherkin */;
-			targetProxy = F808B21566A8975298C8862C205F40AF /* PBXContainerItemProxy */;
+			target = AC7344D17B783CEC9ABEAEA4EBBDF10E /* XCTest-Gherkin */;
+			targetProxy = D457143E24D96C35FFA0EE0067BB1A65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		005F02AAE287087E86FAFAE14BAD092E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBADDE20D5139B731A8E63E2BDA0466 /* XCTest-Gherkin.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = XCTest_Gherkin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		034014829C1E4434983CF3A690C12017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,39 +435,42 @@
 			};
 			name = Debug;
 		};
-		1E4FD5E687D4A773F8159D1BDADB3607 /* Debug */ = {
+		433E3AC07EFD046DFB374748988158B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBADDE20D5139B731A8E63E2BDA0466 /* XCTest-Gherkin.xcconfig */;
+			baseConfigurationReference = E55C322EBCD638D0547E04B135498D8E /* Pods-XcuitUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-XcuitUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = XCTest_Gherkin;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XcuitUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		545396B9EB3ED2044D9FC5DC41639287 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C7D0245EF600CC64799FA24A6238307 /* Pods-Xcuit.debug.xcconfig */;
+			baseConfigurationReference = 469C6CA018C49921E51FDDC83C881C2C /* Pods-Xcuit.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -529,7 +503,7 @@
 		};
 		81A957D0D1549F58EC6B573AD258765B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57DD8F5E4D25EBBB1F6ABBDCDE76C018 /* Pods-Xcuit.release.xcconfig */;
+			baseConfigurationReference = EE8D427F284E225A7DDBB2DDC7E01BA8 /* Pods-Xcuit.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -560,38 +534,39 @@
 			};
 			name = Release;
 		};
-		A2119DF307BF4169C87400F619967B9C /* Release */ = {
+		B23518140794A0A85C4D7A96DDC89F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADFA31AE61C1819518C4CF0DD4295FBA /* Pods-Xcuit-XcuitUITests.release.xcconfig */;
+			baseConfigurationReference = EA515C6CC97852E2EB32C857B8CE52FD /* Pods-XcuitUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Xcuit-XcuitUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-XcuitUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Xcuit_XcuitUITests;
+				PRODUCT_NAME = Pods_XcuitUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -631,9 +606,9 @@
 			};
 			name = Release;
 		};
-		C807C3C6EADEF63E6BAF7D45A103BE56 /* Debug */ = {
+		DC71C76F3E90DE08545F9C68FFF9C384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC7737C5994E4C3F634974B324EA14A /* Pods-Xcuit-XcuitUITests.debug.xcconfig */;
+			baseConfigurationReference = BFBADDE20D5139B731A8E63E2BDA0466 /* XCTest-Gherkin.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -644,18 +619,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Xcuit-XcuitUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Xcuit_XcuitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = XCTest_Gherkin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -665,9 +637,48 @@
 			};
 			name = Debug;
 		};
+		F3A74F77A2359213F78BDDFA53A9C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBADDE20D5139B731A8E63E2BDA0466 /* XCTest-Gherkin.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = XCTest_Gherkin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27544A84976F3AC1182833559E6661BA /* Build configuration list for PBXNativeTarget "Pods-XcuitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23518140794A0A85C4D7A96DDC89F1F /* Debug */,
+				433E3AC07EFD046DFB374748988158B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -686,20 +697,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36562EE208D8626E1F0575BDD7C348B7 /* Build configuration list for PBXNativeTarget "Pods-Xcuit-XcuitUITests" */ = {
+		BC41676D30696F968B4891FE909A0BCD /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C807C3C6EADEF63E6BAF7D45A103BE56 /* Debug */,
-				A2119DF307BF4169C87400F619967B9C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		76F6C4AFF6A1A9704C3555EFBAD753A2 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E4FD5E687D4A773F8159D1BDADB3607 /* Debug */,
-				005F02AAE287087E86FAFAE14BAD092E /* Release */,
+				DC71C76F3E90DE08545F9C68FFF9C384 /* Debug */,
+				F3A74F77A2359213F78BDDFA53A9C0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
