@@ -23,7 +23,7 @@ class PlayerCell: UITableViewCell {
         image = image.stringByReplacingOccurrencesOfString("'", withString: "-")
         avatarImage.image = UIImage(named: image)
         avatarImage.accessibilityIdentifier = "\(image)-img"
-        nameLabel.text = "\(player.name)-label"
+        nameLabel.text = "\(player.name)"
         roleImage.image = UIImage(named: Role.image[player.role.hashValue])
         roleImage.accessibilityIdentifier = "\(image)-\(Role.image[player.role.hashValue])"
         loreImage.image = UIImage(named: Lore.image[player.lore.hashValue])

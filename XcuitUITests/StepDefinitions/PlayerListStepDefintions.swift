@@ -17,9 +17,13 @@ class PlayerListStepDefintions: StepDefiner {
             print("Hola")
         }
         
-        step("I tap the Sylvanas row") {
+        step("I tap the ([a-zA-Z]*) row")  { (matches: [String]) in
+            // Check that we have a valid name to use
+            XCTAssertNotNil(matches.first, "Invalid character name.")
+            
             // Tap the first row of Sylvanas
-            self.app.tables.cells["Sylvanas"].tap()
+            let expectedValue = matches.first!
+            self.app.tables.cells[expectedValue].tap()
         }
         
         step("The image displayed should be ([a-zA-Z]*)") { (matches: [String]) in

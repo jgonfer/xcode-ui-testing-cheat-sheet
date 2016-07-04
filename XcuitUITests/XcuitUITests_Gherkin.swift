@@ -32,4 +32,9 @@ class XcuitUITests_Gherkin: XCTestCase {
         Then("The image displayed should be Sylvanas")
     }
     
+    func test02ShowHiddenPlayerFromList() {
+        Given("A first run state")
+        When("I tap the Artanis row")
+        Then("The image displayed should be Artanis")
+    }
 }
