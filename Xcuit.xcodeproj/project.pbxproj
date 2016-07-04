@@ -22,7 +22,6 @@
 		1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040C1D22C0DB00116CA4 /* Role.swift */; };
 		1D99040F1D22C11900116CA4 /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040E1D22C11900116CA4 /* Lore.swift */; };
 		1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */; };
-		5FFFDE3D6D06A5EAF121D838 /* Pods_Xcuit_XcuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A0DDB6B64FE3C6C39FA082 /* Pods_Xcuit_XcuitUITests.framework */; };
 		6B61A3261D22F7AB00F7A107 /* Players.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B61A3251D22F7AB00F7A107 /* Players.xcassets */; };
 		C37A925028E0D79EF4058D9A /* Pods_XcuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37A925028E0D79EF4058D9A /* Pods_XcuitUITests.framework in Frameworks */,
-				5FFFDE3D6D06A5EAF121D838 /* Pods_Xcuit_XcuitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +570,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C15DEF82B4D270F4894E9287 /* Pods-XcuitUITests.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/\"",
+				);
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -585,6 +587,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/\"",
+				);
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
