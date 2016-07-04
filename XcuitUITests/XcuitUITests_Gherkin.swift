@@ -29,6 +29,7 @@ class XcuitUITests_Gherkin: XCTestCase {
     func test01ShowVisiblePlayerFromList() {
         Given("A first run state")
         When("I tap the Sylvanas row")
+        Then("The image displayed should be Sylvanas")
     }
     
 }
