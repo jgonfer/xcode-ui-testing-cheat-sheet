@@ -12,9 +12,6 @@ before_install:
 - pod install
 - xcrun simctl list # list devices
 
-install:
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-
 env:
   - DESTINATION='platform=iOS Simulator,name=iPhone 6,OS=9.1' UI=true
   - DESTINATION='platform=iOS Simulator,name=iPhone 6,OS=8.4'
@@ -23,5 +20,6 @@ env:
 
 script:
 - set -o pipefail
-- xcodebuild -workspace Example/FeetInchDelegate.xcworkspace -scheme FeetInchDelegate-Example -sdk iphonesimulator -destination "OS=9.0,name=iPhone 6" clean build | xcpretty -c || true
-- xcodebuild -workspace Example/FeetInchDelegate.xcworkspace -scheme FeetInchDelegate-Example -sdk iphonesimulator -destination "OS=9.0,name=iPhone 6" test | xcpretty -c
+- xcodebuild -destination "$DESTINATION" -workspace Xcuit.xcworkspace -scheme Xcuit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test | xcpretty
+- if [ $UI ]; then xcodebuild -destination "$DESTINATION" -workspace Xcuit.xcworkspace -scheme XcuitUITests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test | xcpretty; fi
+- pod lib lint
