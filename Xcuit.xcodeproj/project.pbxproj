@@ -318,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests-frameworks.sh\"";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests-frameworks.sh\"";
 		};
 		56A32EB5EE7B95BE01F3D738 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -332,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8251EEC2D0DC0C67D20B690E /* [CP] Copy Pods Resources */ = {
@@ -570,7 +570,7 @@
 		};
 		1D9903FB1D22935B00116CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEAD519C42F094F70F04F4C6 /* Pods-Xcuit-XcuitUITests.debug.xcconfig */;
+			baseConfigurationReference = C15DEF82B4D270F4894E9287 /* Pods-XcuitUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -583,7 +583,7 @@
 		};
 		1D9903FC1D22935B00116CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B799E6671653BB77D1B22784 /* Pods-Xcuit-XcuitUITests.release.xcconfig */;
+			baseConfigurationReference = 38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XcuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
