@@ -29,9 +29,6 @@ class XcuitUITests_Gherkin: XCTestCase {
     func test01ShowVisiblePlayerFromList() {
         Given("A first run state")
         When("I tap the Sylvanas row")
-        And("I do another thing")
-        Then("This value should be 100")
-        And("This condition should be met as well")
     }
     
 }

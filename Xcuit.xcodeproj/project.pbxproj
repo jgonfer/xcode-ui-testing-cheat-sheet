@@ -235,6 +235,7 @@
 				1D9903E81D22935B00116CA4 /* Frameworks */,
 				1D9903E91D22935B00116CA4 /* Resources */,
 				56A32EB5EE7B95BE01F3D738 /* [CP] Copy Pods Resources */,
+				1D85BB4E1D2A539D00170492 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -306,6 +307,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D85BB4E1D2A539D00170492 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xcuit-XcuitUITests/Pods-Xcuit-XcuitUITests-frameworks.sh\"";
+		};
 		56A32EB5EE7B95BE01F3D738 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
