@@ -201,6 +201,33 @@
             </objects>
             <point key="canvasLocation" x="2417" y="-320"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="e5F-Xr-1vE">
+            <objects>
+                <viewController id="rum-75-abM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nAv-3I-aZA"/>
+                        <viewControllerLayoutGuide type="bottom" id="nLG-VS-sWn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="goe-eL-tcV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gma-8N-qi0">
+                                <rect key="frame" x="245" y="200" width="110" height="200"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gma-8N-qi0" firstAttribute="centerX" secondItem="goe-eL-tcV" secondAttribute="centerX" id="AIg-5Y-3Ag"/>
+                            <constraint firstItem="Gma-8N-qi0" firstAttribute="centerY" secondItem="goe-eL-tcV" secondAttribute="centerY" id="Yhj-az-mTi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49q-8W-aCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="835"/>
+        </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
