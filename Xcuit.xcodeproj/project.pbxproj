@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C91A5C109508E6614238AAD /* Pods_Xcuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C235D729ACDD838EE039C09B /* Pods_Xcuit.framework */; };
+		1D253B161D300E3C00C80C26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D253B151D300E3C00C80C26 /* LoginViewController.swift */; };
 		1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */; };
 		1D590D8E1D26AE9500249C90 /* PlayerListStepDefintions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */; };
 		1D9903CE1D22935B00116CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9903CD1D22935B00116CA4 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D253B151D300E3C00C80C26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controller/LoginViewController.swift; sourceTree = "<group>"; };
 		1D45F3FE1D26818B0056F536 /* XcuitUITests_Gherkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcuitUITests_Gherkin.swift; sourceTree = "<group>"; };
 		1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerListStepDefintions.swift; path = StepDefinitions/PlayerListStepDefintions.swift; sourceTree = "<group>"; };
 		1D9903CA1D22935B00116CA4 /* Xcuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 		1D9904021D22B6B700116CA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1D253B151D300E3C00C80C26 /* LoginViewController.swift */,
 				1D9904071D22B70500116CA4 /* PlayersListViewController.swift */,
 				1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */,
 			);
@@ -400,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D253B161D300E3C00C80C26 /* LoginViewController.swift in Sources */,
 				1D9904081D22B70500116CA4 /* PlayersListViewController.swift in Sources */,
 				1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */,
 				1D9903D21D22935B00116CA4 /* SecondViewController.swift in Sources */,
