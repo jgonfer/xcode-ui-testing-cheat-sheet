@@ -17,10 +17,35 @@ class PlayersListViewController: UIViewController {
     var selectedIndex: NSIndexPath?
     var ordered = false
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        guard Utils.isLoggedIn() else {
+            Utils.presentLoginVC(self)
+            
+            return
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if Utils.isLoggedIn() {
+            guard let _ = players else {
+                setupView()
+                tableView.reloadData()
+                return
+            }
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        if Utils.isLoggedIn() {
+            setupView()
+        }
     }
     
     private func setupView() {
@@ -92,6 +117,13 @@ class PlayersListViewController: UIViewController {
             vc.delegate = self
             vc.player = players[index.row]
         }
+    }
+    
+    // MARK: IBAction Methods
+    
+    @IBAction func logout(sender: UIBarButtonItem) {
+        Utils.cleanLogin()
+        Utils.presentLoginVC(self)
     }
 }
 
