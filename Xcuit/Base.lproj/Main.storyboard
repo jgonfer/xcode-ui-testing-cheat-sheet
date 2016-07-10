@@ -122,7 +122,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Heroes of the Storm" id="y2R-il-0ZZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="7Fy-RJ-rnX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="7Fy-RJ-rnX" userLabel="Logout">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="logout:" destination="9pv-A4-QxB" id="eq4-qJ-ItO"/>
@@ -240,7 +240,7 @@
                                             <constraint firstAttribute="height" constant="40" id="ZYC-UR-nmc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-Hu-eGk">
                                         <rect key="frame" x="0.0" y="50" width="150" height="40"/>
@@ -250,7 +250,7 @@
                                             <constraint firstAttribute="height" constant="40" id="OtJ-ZB-6kN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-kw-KDv">
                                         <rect key="frame" x="0.0" y="100" width="150" height="30"/>

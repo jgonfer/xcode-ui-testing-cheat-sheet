@@ -21,7 +21,7 @@ class PlayersListViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         guard Utils.isLoggedIn() else {
-            Utils.presentLoginVC(self)
+            Utils.presentLoginVC(self, animated: false)
             
             return
         }
@@ -123,7 +123,7 @@ class PlayersListViewController: UIViewController {
     
     @IBAction func logout(sender: UIBarButtonItem) {
         Utils.cleanLogin()
-        Utils.presentLoginVC(self)
+        Utils.presentLoginVC(self, animated: true)
     }
 }
 

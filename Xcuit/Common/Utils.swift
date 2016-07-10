@@ -39,11 +39,11 @@ class Utils: NSObject {
     
     // MARK: VC Presentation
     
-    class func presentLoginVC(view: UIViewController) {
+    class func presentLoginVC(view: UIViewController, animated: Bool) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("loginVC") as! LoginViewController
         vc.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        view.presentViewController(vc, animated: true, completion: nil)
+        view.presentViewController(vc, animated: animated, completion: nil)
     }
 }
 

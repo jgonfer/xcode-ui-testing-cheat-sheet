@@ -23,6 +23,7 @@
 		1D99040D1D22C0DB00116CA4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040C1D22C0DB00116CA4 /* Role.swift */; };
 		1D99040F1D22C11900116CA4 /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99040E1D22C11900116CA4 /* Lore.swift */; };
 		1D9904111D22CAD500116CA4 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9904101D22CAD500116CA4 /* PlayerDetailsViewController.swift */; };
+		6B03ED6D1D32C359005625D8 /* LoginStepDefintions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B03ED6C1D32C359005625D8 /* LoginStepDefintions.swift */; };
 		6B61A3261D22F7AB00F7A107 /* Players.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B61A3251D22F7AB00F7A107 /* Players.xcassets */; };
 		6BFA5F881D32AE2C00E99238 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA5F871D32AE2C00E99238 /* Utils.swift */; };
 		C37A925028E0D79EF4058D9A /* Pods_XcuitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */; };
@@ -61,6 +62,7 @@
 		337AEB53494F9A112FCDB47D /* Pods-Xcuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xcuit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xcuit/Pods-Xcuit.debug.xcconfig"; sourceTree = "<group>"; };
 		38605643FCD1B811FB6639C1 /* Pods-XcuitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcuitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XcuitUITests/Pods-XcuitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		66E16849533E7365AC65CAC2 /* Pods_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B03ED6C1D32C359005625D8 /* LoginStepDefintions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginStepDefintions.swift; path = StepDefinitions/LoginStepDefintions.swift; sourceTree = "<group>"; };
 		6B61A3251D22F7AB00F7A107 /* Players.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Players.xcassets; sourceTree = "<group>"; };
 		6BFA5F871D32AE2C00E99238 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		77A0DDB6B64FE3C6C39FA082 /* Pods_Xcuit_XcuitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xcuit_XcuitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1D590D8D1D26AE9500249C90 /* PlayerListStepDefintions.swift */,
+				6B03ED6C1D32C359005625D8 /* LoginStepDefintions.swift */,
 			);
 			name = StepDefinitions;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B03ED6D1D32C359005625D8 /* LoginStepDefintions.swift in Sources */,
 				1D45F3FF1D26818B0056F536 /* XcuitUITests_Gherkin.swift in Sources */,
 				1D9903F01D22935B00116CA4 /* XcuitUITests.swift in Sources */,
 				1D590D8E1D26AE9500249C90 /* PlayerListStepDefintions.swift in Sources */,
