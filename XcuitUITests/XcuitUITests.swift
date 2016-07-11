@@ -25,8 +25,30 @@ class XcuitUITests: XCTestCase {
         sleep(1)
     }
     
+    override func tearDown() {
+        super.tearDown()
+        
+        let backButton = app.navigationBars.buttons["Back"]
+        if backButton.hittable {
+            backButton.tap()
+        }
+        
+        let tabBarPlayersButton = app.tabBars.buttons["Players"]
+        if tabBarPlayersButton.hittable {
+            tabBarPlayersButton.tap()
+        }
+        
+        let logoutButton = app.buttons["Stop"]
+        if logoutButton.hittable {
+            logoutButton.tap()
+        }
+    }
+    
     func test01ShowVisiblePlayerFromList() {
         let player = "Sylvanas"
+        
+        login()
+        
         // Tap the first row of Sylvanas
         app.tables.cells[player].tap()
         
@@ -42,6 +64,9 @@ class XcuitUITests: XCTestCase {
     
     func test02ShowHiddenPlayerFromList() {
         let player = "Artanis"
+        
+        login()
+        
         // Tap the last row of Artanis, which isn't visible
         app.tables.cells[player].tap()
         
@@ -57,6 +82,9 @@ class XcuitUITests: XCTestCase {
     
     func test03PurchaseANonOwnedCharacter() {
         let player = "Sylvanas"
+        
+        login()
+        
         // Get the Sylvanas row
         let cell = app.tables.cells[player]
         // Check that we don't own the character yet
@@ -75,16 +103,41 @@ class XcuitUITests: XCTestCase {
         purchaseButton.tap()
         
         // Check that we've purchased Sylvanas character
-        XCTAssert(cell.images["sylvanas-owned"].exists, "You didn't purchase this character.")
+        let ownedImage = cell.images["sylvanas-owned"]
+        waitForExists(ownedImage, waitSeconds: 2)
+        XCTAssert(ownedImage.exists, "You didn't purchase this character.")
     }
     
     func test04PurchaseAnOwnedCharacter() {
         let player = "Sylvanas"
-        // Get the Sylvanas row
-        let cell = app.tables.cells[player]
+        
+        login()
+        
         // We do the same that we did in test03 for the purpose
         // of try to buy the same Sylvanas character
-        test03PurchaseANonOwnedCharacter()
+        // Get the Sylvanas row
+        let cell = app.tables.cells[player]
+        // Check that we don't own the character yet
+        XCTAssert(cell.images["\(player.lowercaseString)-owned-no"].exists, "You already own this character.")
+        // Tap the Sylvanas row
+        cell.tap()
+        
+        // Wait until the purchase button is added to the view and exists
+        let purchaseButton = app.buttons["purchase-button"]
+        waitForExists(purchaseButton, waitSeconds: 2)
+        
+        // Wait fot button animation ends (its duration is 1 second)
+        sleep(1)
+        
+        // Tap the purchase button
+        purchaseButton.tap()
+        
+        // Check that we've purchased Sylvanas character
+        let ownedImage = cell.images["sylvanas-owned"]
+        waitForExists(ownedImage, waitSeconds: 2)
+        XCTAssert(ownedImage.exists, "You didn't purchase this character.")
+        // --- End of test03
+        
         // Tap the Sylvanas row
         cell.tap()
         
@@ -97,6 +150,9 @@ class XcuitUITests: XCTestCase {
     func test05PullToOrderPlayersList() {
         let playerDisordered = "Sylvanas"
         let playerOrdered = "Artanis"
+        
+        login()
+        
         // Get first row
         let firstCell = app.tables["players"].cells.elementBoundByIndex(0)
         // Check that the first row is Sylvanas
@@ -107,6 +163,18 @@ class XcuitUITests: XCTestCase {
         start.pressForDuration(0, thenDragToCoordinate: finish)
         // Check that the first row has changed and now is Artanis
         XCTAssert(firstCell.identifier == playerOrdered)
+    }
+    
+    func login() {
+        let email = self.app.textFields["login_textfield_email"]
+        email.tap()
+        email.typeText("demo@domain.com")
+        
+        let password = self.app.secureTextFields["login_textfield_password"]
+        password.tap()
+        password.typeText("demo")
+        
+        self.app.buttons["login_login"].tap()
     }
 }
 

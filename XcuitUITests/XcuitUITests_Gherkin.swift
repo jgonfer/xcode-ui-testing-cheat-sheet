@@ -29,8 +29,20 @@ class XcuitUITests_Gherkin: XCTestCase {
     override func tearDown() {
         super.tearDown()
         
-        app.tabs["Players"].tap()
-        app.buttons["Logout"].tap()
+        let backButton = app.navigationBars.buttons["Back"]
+        if backButton.hittable {
+            backButton.tap()
+        }
+        
+        let tabBarPlayersButton = app.tabBars.buttons["Players"]
+        if tabBarPlayersButton.hittable {
+            tabBarPlayersButton.tap()
+        }
+        
+        let logoutButton = app.buttons["Stop"]
+        if logoutButton.hittable {
+            logoutButton.tap()
+        }
     }
     
     func test01ShowVisiblePlayerFromList() {

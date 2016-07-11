@@ -20,13 +20,14 @@ class LoginStepDefintions: StepDefiner {
         }
         
         step("A logged session") {
+            print(self.app.debugDescription)
             let email = self.app.textFields["login_textfield_email"]
             email.tap()
-            email.typeText("a@a.aaa")
+            email.typeText("demo@domain.com")
             
             let password = self.app.secureTextFields["login_textfield_password"]
             password.tap()
-            password.typeText("aaa")
+            password.typeText("demo")
             
             self.app.buttons["login_login"].tap()
         }
