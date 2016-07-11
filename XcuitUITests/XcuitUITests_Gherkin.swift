@@ -26,14 +26,33 @@ class XcuitUITests_Gherkin: XCTestCase {
         sleep(1)
     }
     
+    override func tearDown() {
+        super.tearDown()
+        
+        let backButton = app.navigationBars.buttons["Back"]
+        if backButton.hittable {
+            backButton.tap()
+        }
+        
+        let tabBarPlayersButton = app.tabBars.buttons["Players"]
+        if tabBarPlayersButton.hittable {
+            tabBarPlayersButton.tap()
+        }
+        
+        let logoutButton = app.buttons["Stop"]
+        if logoutButton.hittable {
+            logoutButton.tap()
+        }
+    }
+    
     func test01ShowVisiblePlayerFromList() {
-        Given("A first run state")
+        Given("A logged session")
         When("I tap the Sylvanas row")
         Then("The image displayed should be Sylvanas")
     }
     
     func test02ShowHiddenPlayerFromList() {
-        Given("A first run state")
+        Given("A logged session")
         When("I tap the Artanis row")
         Then("The image displayed should be Artanis")
     }
