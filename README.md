@@ -1,6 +1,6 @@
 # Xcode UI Testing Cheat Sheet
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=577a31116ef5830100d98722&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/577a31116ef5830100d98722/build/latest)
-[![platform](https://img.shields.io/badge/platform-ios | osx-lightgrey.svg?style=flat)](https://developer.apple.com/ios/)
+[![platform](https://img.shields.io/badge/platform-ios|osx-lightgrey.svg?style=flat)](https://developer.apple.com/ios/)
 [![env](https://img.shields.io/badge/env-xcode_7.3.1-lightgrey.svg?style=flat)](https://developer.apple.com/xcode/)
 [![Twitter: @j_gonfer](https://img.shields.io/badge/contact-@j__gonfer-yellow.svg?style=flat)](https://twitter.com/j_gonfer)
 
